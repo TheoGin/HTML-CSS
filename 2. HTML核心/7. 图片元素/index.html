@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- img元素
+    - alt属性：当图片资源失效时，将使用该属性的文字替代图片
+    - usemap映射类似于锚点，需要加#映射名，但对应的是name，而不是id！！！
+    -->
+    <!-- <a
+      href="https://baike.baidu.com/item/%E5%A4%AA%E9%98%B3%E7%B3%BB/173281"
+      target="_blank"
+    >
+      <img usemap="#solarMap" src="./img/solar.jpg" alt="这是一张太阳系图片" />
+    </a>
+
+    <h2>太阳系</h2>
+    <p>太阳系，位于距银河系中心大约估计值为2.4~2.7万光年的位置（银河系的恒星数量约在1000亿到4000亿之间，太阳只是其中之一）。太阳以220千米/秒的速度绕银心运动，大约2.5亿年绕行一周，地球气候及整体自然界也因此发生2.5亿年的周期性变化。太阳运行的方向基本上是朝向织女座，靠近武仙座的方向。</p> -->
+
+    <!-- 用figure元素（用于把图片、图片标题、描述包裹起来）, 是为了语义化，页面没什么效果-->
+    <figure>
+      <a
+        href="https://baike.baidu.com/item/%E5%A4%AA%E9%98%B3%E7%B3%BB/173281"
+        target="_blank"
+      >
+        <img
+          usemap="#solarMap"
+          src="./img/solar.jpg"
+          alt="这是一张太阳系图片"
+        />
+      </a>
+
+      <!-- 图片标题 -->
+      <figcaption>
+        <h2>太阳系</h2>
+      </figcaption>
+      <!-- 与图片有关的信息 -->
+      <p>
+        太阳系，位于距银河系中心大约估计值为2.4~2.7万光年的位置（银河系的恒星数量约在1000亿到4000亿之间，太阳只是其中之一）。太阳以220千米/秒的速度绕银心运动，大约2.5亿年绕行一周，地球气候及整体自然界也因此发生2.5亿年的周期性变化。太阳运行的方向基本上是朝向织女座，靠近武仙座的方向。
+      </p>
+    </figure>
+
+    <map name="solarMap">
+      <!-- coord 坐标（coordinate的缩写） -->
+      <!-- 形状：圆形
+       coords写的值是：x,y,r
+        - 圆点坐标：x,y
+        - 半径：r
+      -->
+      <area
+        shape="circle"
+        coords="360,204,48"
+        href="https://baike.baidu.com/item/%E6%9C%A8%E6%98%9F/222105"
+        target="_blank"
+      />
+
+      <!-- 形状：矩形rectangle
+       coords写的值是：x,y,x,y
+        - 第一个x,y：矩形左上角坐标
+        - 第二个x,y：矩形右下角坐标
+      -->
+      <area
+        shape="rect"
+        coords="315,270,365,302"
+        href="https://baike.baidu.com/item/%E6%9C%A8%E6%98%9F/222105"
+        target="_blank"
+      />
+
+      <!-- 形状：多边形poly
+       coords写的值是：x,y,x,y, ……（几个点：几边形）
+        - 第一个点x,y
+        - 第二个点x,y
+        - ……
+      -->
+      <area
+        shape="poly"
+        coords="601,371,645,312,678,338,645,392"
+        href="https://baike.baidu.com/item/%E5%86%A5%E7%8E%8B%E6%98%9F/137498"
+        target="_blank"
+      />
+    </map>
+  </body>
+</html>

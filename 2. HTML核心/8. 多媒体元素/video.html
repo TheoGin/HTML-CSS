@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- autoplay可能写了也不生效，因为怕吓到用户。autoplay + muted就可以生效 -->
+    <!-- <video controls="controls" autoplay="autoplay" muted="muted" loop="loop" src="./media/open.mp4" style="width: 500px;"></video> -->
+    <!-- - 某些属性取值为属性名，在HTML5中，可以不用书写属性值 -->
+    <!-- <video controls autoplay muted loop src="./media/open.mp4" style="width: 500px;"></video> -->
+    <!-- 旧版本的浏览器不支持这两个元素，为了兼容性，不在video写src，在里面的source元素写 -->
+    <video controls autoplay muted loop style="width: 500px;">
+        <!-- 不同的浏览器支持的音视频格式可能不一致 -->
+        <source src="./media/open.mp4">
+        <source src="./media/open.webm">
+        <a href="#">对不起，你当前版本的浏览器不支持视频播放，请下载最新的浏览器</a>
+        <!-- 或者用flash实现视频播放 -->
+    </video>
+</body>
+</html>
