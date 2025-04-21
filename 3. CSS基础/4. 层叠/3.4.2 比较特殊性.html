@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body a {
+            /* 4位数：0002 */
+            color: antiquewhite;
+        }
+
+        a {
+            /* 4位数：0001 */
+            color: aquamarine;
+        }
+
+        .myLink {
+            /* 4位数：0010 */
+            color: black;
+        }
+
+        #myIdLink {
+            /* 4位数：0100 */
+            color: #008c8c;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. 千位：如果是内联样式，记1，否则记0
+        4位数：1000 
+    -->
+    <a style="color: chocolate;" href="" class="myLink" id="myIdLink">谷歌</a>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      /* -----------------比较特殊性----------------- */
+      /* 元素选择器 */
+      a {
+        /* 4位数：0001 */
+        color: red;
+      }
+
+      div ul a {
+        /* 4位数：0003 */
+        color: green;
+      }
+
+      /* id选择器、元素选择器 */
+      #mydiv #myul a {
+        /* 4位数：0201 */
+        color: gray;
+      }
+
+      /* -----------------比较源次序：代码书写靠后的胜出----------------- */
+      /* id选择器、类选择器 */
+      #mydiv #myul .mylink {
+        /* 4位数：0210 */
+        color: #008c8c;
+      }
+
+      /* id选择器、伪类选择器 */
+      /* #mydiv #myul a:link { */ /* 4位数：0211 */
+      #mydiv #myul :link {
+        /* 4位数：0210 */
+        color: chocolate;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mydiv">
+      <ul id="myul">
+        <li id="myli">
+          <a href="https://163.com" class="mylink"> 举个例子 </a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
