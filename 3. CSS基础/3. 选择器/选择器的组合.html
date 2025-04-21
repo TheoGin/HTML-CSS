@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 后代元素 */
+      ul li {
+        color: red;
+      }
+
+      /* 子元素  */
+      div  ul > li {
+        color: aquamarine;
+      }
+
+      .special {
+        color: greenyellow;
+      }
+
+      /* 4. 相邻兄弟元素 —— + */
+      .special + li {
+        color: #008c8c;
+      }
+
+      /* 5. 后面出现的所有兄弟元素 —— ~ */
+      .special ~ li {
+        color: #8c007e;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Lorem.
+      <ul>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Reiciendis, sunt ratione!</li>
+        <li class="special">Delectus, aspernatur doloribus!</li>
+        <li>Aliquam, nostrum distinctio!</li>
+        <li>Dolore, suscipit fuga!</li>
+        <li>Tempora, quas nostrum.</li>
+      </ul>
+    </div>
+    <h2>Lorem.</h2>
+  </body>
+</html>
