@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        color: red;
+      }
+
+      /* [attr] 选中所有具有href属性的元素 */
+      [href] {
+        color: greenyellow;
+      }
+
+      /* [attr=value] 选中属性为href，值为https://www.baidu.com的元素 */
+      [href="https://www.baidu.com"]
+      {
+        color: #008c8c;
+      }
+
+      /* [attr~=value] 表示带有以 attr 命名的属性的元素，并且该属性是一个以空格作为分隔的值列表，其中至少有一个值为 value。 */
+      [class~="a"] {
+        color: aqua;
+      }
+      /* 和上面等价
+      .a {
+        color: aqua;
+      } */
+
+      /* [attr^=value] 表示带有以 attr 命名的属性，且属性值是以 value 开头的元素。 */
+      [href^="https:"] {
+        color: chocolate;
+      }
+
+      /* [attr$=value] 表示带有以 attr 命名的属性，且属性值是以 value 结尾的元素。 */
+      [href$="google.com"] {
+        color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <div>Lorem.</div>
+    <h2>Lorem.</h2>
+    <p class="a b c d">Lorem.</p>
+
+    <a href="https://www.baidu.com">百度</a>
+    <a href="https://google.com">谷歌</a>
+    <a href="https://sina.com">新浪</a>
+  </body>
+</html>
