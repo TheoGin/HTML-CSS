@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 260px;
+            height: 190px;
+            border: 3px solid;
+            /* keep-all;中文没有空格就一直不会截断，即都在一行上 */
+            word-break: keep-all;
+        }
+    </style>
+</head>
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias ea nobis reiciendis id consequuntur dolorem aliquid nihil illum impedit officia tenetur magnam incidunt, in quos, nostrum sit voluptas cupiditate ipsum?</div>
+    <div>会影响文字在什么位置被截断换行会影响文字在什么位置 被截断换行会影响文字在什么位置被截断换行 会影响文字在什么位置被截断换行会影响文字在什么位置被截断换行会影响 文字在什么位置被截断换行</div>
+</body>
+</html>
