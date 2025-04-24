@@ -1,53 +1,69 @@
 body {
     background-color: #4d4a40;
+    /* 所有文字行高均为2 */
+    line-height: 2;
+    min-width: 1024px;
 }
 
 .article-container {
-    width: 1713px;
+    /* 按设计稿比例缩放，不能写死！！！ */
+    /* width: 1713px; */
+    /* 1713 / 1902 = 90% */
+    /* width: 1713 / 1902%;  */ /* Invalid property value */
+    width: 90%;
     background-color: #fff;
     margin: 20px auto;
     padding: 30px 0;
 }
 
-.article-header {
+.article-container header {
     color: #fff;
     text-align: center;
     background-color: #267890;
     border: 5px solid #14414e;
     /* margin: 30px 0; */
-    padding: 30px 0;
-    margin-left: -34px;
-    margin-right: -34px;
+    /* padding: 30px 0; */
+    /* padding-bottom: 30px; */
+    margin: 0 -34px;
+}
+
+.article-container header h1 {
+    font-size: 42px;
+    /* margin-bottom: 20px; */
+    font-weight: bold;
+}
+
+/* .article-container header a:link,
+.article-container header a:visited {
+    color: #DBDBDB;
+} */
+
+.article-container header .original-link {
+    color: #DBDBDB;
+    /* 有行高，先置为1 */
+    line-height: 1;
     margin-bottom: 30px;
 }
 
-.article-header h1 {
-    font-size: 42px;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-.article-header a:link,
-.article-header a:visited {
-    color: #DBDBDB;
-}
-
-.article-header a:hover {
+.article-container header .original-link a:hover {
     color: #fff;
 }
 
-.content {
-    width: 1541px;
-    line-height: 2;
+.article-container section {
+    /* width: 1541px; */
+    /* 等比例缩放：1541 / 1713 = 90% */
+    width: 90%;
     margin: 0 auto;
 }
 
-.content .desc,
-.chapter {
+.article-container section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    border-top: 1px dotted;
     border-bottom: 1px dotted;
 }
 
-.chapter h2 {
-    font-size: 32px;
-    font-weight: bold;
+.article-container section p {
+    /* 每个段落之间空一行 */
+    margin: 1em 0;
 }

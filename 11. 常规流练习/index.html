@@ -3,77 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CSS 中不为人知的部分</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
     <article class="article-container">
-      <div class="article-header">
+      <header>
         <h1>CSS 中不为人知的部分</h1>
-        <a target="_blank" href="https://madebymike.com.au/writing/the-invisible-parts-of-CSS/"
-          >原文地址:https://madebymike.com.au/writing/the-invisible-parts-of-CSS/</a
-        >
-      </div>
-      <div class="content">
-        <div class="desc">
-          <p>
-            如果你在日常工作中使用CSS,你的主要目标可能会重点围绕着使事情“看起来正确”。如何实现这一点经常是远不如最终结果那么重要。这意味着比起正确的语法和视觉结果来说,我们更少关心CSS的工作原理。
-          </p>
-          <p>
-            CSS的视觉结果通常是操作隐藏属性的间接后果,你可能还没有意识到这一点。某些CSS属性(比如background-color)与你看到的内容有直接而明显的关系。同时,其它像display这样的属性对于我们很多人来说仍然是模棱两可的,因为结果似乎与上下文环境有很大关系。
-          </p>
+        <!-- <a target="_blank" href="https://madebymike.com.au/writing/the-invisible-parts-of-CSS/">
+            原文地址:https://madebymike.com.au/writing/the-invisible-parts-of-CSS/
+        </a> -->
+        <!-- div一般要取类名 -->
+        <div class="original-link">
+          原文地址:<a
+            target="_blank"
+            href="https://madebymike.com.au/writing/the-invisible-parts-of-CSS/"
+          >
+            https://madebymike.com.au/writing/the-invisible-parts-of-CSS/
+          </a>
         </div>
+      </header>
 
-        <section class="chapter">
-          <h2>渲染过程概述</h2>
-          <p>当加载一个HTML文档时,为了让该页面渲染,有很多事情要发生。</p>
-          <p>
-            第一个步骤就是解析HTML文档。浏览器从这一步创建一个文档树。树状结构是表示像HTML这种具有明显层次结构信息的一种方法。树中的元素可以被描述为类似于族谱,比如祖先、父亲、孩子和兄弟姐妹。
-          </p>
-          <p>
-            你可能听说过术语DOM。它代表文档对象模型(Document Object
-            Model)。这是文档树结构的一种扩展,被用于存储和操作Web文档内容有关的信息。
-          </p>
-          <p>
-            随着HTML被解析,样式表和其它资源也被获取。样式声明通过一个称为层叠的过程来解释和确定。
-          </p>
-        </section>
+      <!-- 没有标题的章节 -->
+      <section>
+        <p>
+          如果你在日常工作中使用CSS,你的主要目标可能会重点围绕着使事情“看起来正确”。如何实现这一点经常是远不如最终结果那么重要。这意味着比起正确的语法和视觉结果来说,我们更少关心CSS的工作原理。
+        </p>
+        <p>
+          CSS的视觉结果通常是操作隐藏属性的间接后果,你可能还没有意识到这一点。某些CSS属性(比如background-color)与你看到的内容有直接而明显的关系。同时,其它像display这样的属性对于我们很多人来说仍然是模棱两可的,因为结果似乎与上下文环境有很大关系。
+        </p>
+      </section>
 
-        <section class="chapter">
-          <h2>层叠</h2>
-          <p>
-            层叠可能是最被误解的CSS特性之一。它是指组合不同样式表以及解决CSS选择器之间冲突的过程。
-          </p>
-          <p>
-            层叠查看声明的重要性、来源、特殊性以及顺序,来确定使用哪个样式规则。
-          </p>
-          <p>
-            大多数网站有多个样式表。通常,样式是用引用一个CSS文件的一个link标记,或者HTML主体部分的style标记添加的。即使最基础的页面也会有浏览器提供的默认样式。这种默认样式表有时被称为user-agent样式表。
-          </p>
-        </section>
+      <section>
+        <h2>渲染过程概述</h2>
+        <p>当加载一个HTML文档时,为了让该页面渲染,有很多事情要发生。</p>
+        <p>
+          第一个步骤就是解析HTML文档。浏览器从这一步创建一个文档树。树状结构是表示像HTML这种具有明显层次结构信息的一种方法。树中的元素可以被描述为类似于族谱,比如祖先、父亲、孩子和兄弟姐妹。
+        </p>
+        <p>
+          你可能听说过术语DOM。它代表文档对象模型(Document Object
+          Model)。这是文档树结构的一种扩展,被用于存储和操作Web文档内容有关的信息。
+        </p>
+        <p>
+          随着HTML被解析,样式表和其它资源也被获取。样式声明通过一个称为层叠的过程来解释和确定。
+        </p>
+      </section>
 
-        <section class="chapter">
-          <h2>盒模型</h2>
-          <p>
-            理解盒模型是布局和定位时防止挫败所必需的。盒模型是CSS中最基本的概念之一。
-          </p>
-          <p>
-            盒模型用于计算元素的宽度和高度。它只是计算过程中的一个步骤,确定元素的最终布局和定位并非完全依赖于它。
-          </p>
-          <p>
-            HTML
-            中的每个元素都是一个矩形的盒子。每个盒子有用元素的外边距(margin)、边框(border)、内边距(padding)和内容区定义的四个区域。
-          </p>
-          <p>
-            默认情况下,当我们设置一个元素的宽度时,只是设置内容区的宽度。当给一个元素添加内边距、边框或者外边距时,是增加了除宽度以外的部分。实际上,这就是说宽度为50%的两个元素如果添加了内边距、外边距
-            或者边框,就不会并排填满宽度(因为已经超过了100%宽度)。
-          </p>
-          <p>
-            就是这样!相当简单对吧?那么为什么这经常是困惑的来源呢?好吧,你可能已经遇到过一些事情好像表现得有点不同的情况。。。
-          </p>
-        </section>
-      </div>
+      <section>
+        <h2>层叠</h2>
+        <p>
+          层叠可能是最被误解的CSS特性之一。它是指组合不同样式表以及解决CSS选择器之间冲突的过程。
+        </p>
+        <p>
+          层叠查看声明的重要性、来源、特殊性以及顺序,来确定使用哪个样式规则。
+        </p>
+        <p>
+          大多数网站有多个样式表。通常,样式是用引用一个CSS文件的一个link标记,或者HTML主体部分的style标记添加的。即使最基础的页面也会有浏览器提供的默认样式。这种默认样式表有时被称为user-agent样式表。
+        </p>
+      </section>
+
+      <section>
+        <h2>盒模型</h2>
+        <p>
+          理解盒模型是布局和定位时防止挫败所必需的。盒模型是CSS中最基本的概念之一。
+        </p>
+        <p>
+          盒模型用于计算元素的宽度和高度。它只是计算过程中的一个步骤,确定元素的最终布局和定位并非完全依赖于它。
+        </p>
+        <p>
+          HTML
+          中的每个元素都是一个矩形的盒子。每个盒子有用元素的外边距(margin)、边框(border)、内边距(padding)和内容区定义的四个区域。
+        </p>
+        <p>
+          默认情况下,当我们设置一个元素的宽度时,只是设置内容区的宽度。当给一个元素添加内边距、边框或者外边距时,是增加了除宽度以外的部分。实际上,这就是说宽度为50%的两个元素如果添加了内边距、外边距
+          或者边框,就不会并排填满宽度(因为已经超过了100%宽度)。
+        </p>
+        <p>
+          就是这样!相当简单对吧?那么为什么这经常是困惑的来源呢?好吧,你可能已经遇到过一些事情好像表现得有点不同的情况。。。
+        </p>
+      </section>
     </article>
   </body>
 </html>
