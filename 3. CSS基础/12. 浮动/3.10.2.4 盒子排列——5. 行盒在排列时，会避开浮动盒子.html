@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        width: 200px;
+        float: left;
+        /* 图片和文字的距离 */
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+      p {
+        /* 图片和文字的距离，不能给元素设置margin-left，因为p元素相对的是包含块body的内容区域，这样设置不对 */
+        /* margin-left: 10px; */
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./hashiqi.jpg">
+    <!-- 5. 行盒在排列时，会避开浮动盒子 -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quo, laborum distinctio veritatis magnam earum fugiat voluptas obcaecati quia ipsum dicta quaerat corrupti exercitationem modi quos asperiores nulla omnis. Tempore iusto hic amet sint, dicta optio beatae vel quos ad deleniti aspernatur doloremque repellat ex omnis delectus similique neque voluptate placeat ipsa? Minus porro consequatur et suscipit voluptates voluptatum, ea tempore nemo, ipsam obcaecati cum temporibus delectus! In veniam impedit quaerat? Illum deserunt odio veniam officiis, numquam consequatur, ipsum dolorem facilis error eos ratione repellendus quam eum. In tempore repellat officiis, a, quisquam ut illum molestiae alias error nesciunt praesentium!</p>
+    <!-- 如果文字没有在行盒中，浏览器会自动生成一个行盒包裹文字，该行盒叫做匿名行盒。 -->
+    <!-- <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quo, laborum distinctio veritatis magnam earum fugiat voluptas obcaecati quia ipsum dicta quaerat corrupti exercitationem modi quos asperiores nulla omnis. Tempore iusto hic amet sint, dicta optio beatae vel quos ad deleniti aspernatur doloremque repellat ex omnis delectus similique neque voluptate placeat ipsa? Minus porro consequatur et suscipit voluptates voluptatum, ea tempore nemo, ipsam obcaecati cum temporibus delectus! In veniam impedit quaerat? Illum deserunt odio veniam officiis, numquam consequatur, ipsum dolorem facilis error eos ratione repellendus quam eum. In tempore repellat officiis, a, quisquam ut illum molestiae alias error nesciunt praesentium!</span></p> -->
+  </body>
+</html>

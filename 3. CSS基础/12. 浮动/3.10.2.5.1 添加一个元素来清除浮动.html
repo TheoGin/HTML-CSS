@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: lightblue;
+        padding: 30px;
+      }
+      .item {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        float: left;
+        margin: 6px;
+        border: 2px solid;
+      }
+      .clearfix {
+        /* 清除左右浮动 */
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <!-- 该元素必须出现在前面所有浮动盒子的下方 -->
+      <div class="clearfix"></div>
+    </div>
+  </body>
+</html>

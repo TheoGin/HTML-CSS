@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: lightblue;
+        padding: 30px;
+      }
+      .item {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        float: left;
+        margin: 6px;
+        border: 2px solid;
+      }
+      /* 该元素必须出现在前面所有浮动盒子的下方 */
+      .clearfix::after {
+        /* 伪元素必须包含的属性 */
+        content: '';
+        /* 伪元素默认是行内元素（display: inline），需设置为块盒，因为 行盒在排列时，会避开浮动盒子？ */
+        display: block;
+        /* 清除左右浮动 */
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container clearfix">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+  </body>
+</html>

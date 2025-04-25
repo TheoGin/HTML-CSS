@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 500px;
+        height: 200px;
+        background-color: lightblue;
+      }
+      .container .left,
+      .container .right {
+        /* 1. 宽度为auto时，适应内容宽度 */
+        /* width: 100px; */
+
+        /* 2. 高度为auto时，与常规流一致，适应内容的高度 */
+        /* height: 100px; */
+        background-color: red;
+
+        /* 3. margin为auto，为0. */
+        margin: auto;
+
+        /* 4. 边框、内边距、百分比设置与常规流一样 */
+        padding-top: 10%;
+      }
+
+      .container .left {
+        float: left;
+      }
+      .container .right {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">Lorem ipsum dolor sit amet.</div>
+      <div class="right">Lorem, ipsum dolor.</div>
+    </div>
+  </body>
+</html>
