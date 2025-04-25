@@ -1,5 +1,6 @@
 body {
     color: #333;
+    line-height: 1.5;
 }
 
 .main {
@@ -27,28 +28,101 @@ body {
 }
 
 .main .container {
-    width: 70%;
+    width: 1120px;
     margin: 0 auto;
 }
 
-.main .container .select-type {
+.main .container .choose-area {
     border: 1px solid #e5e5e5;
     padding: 0 30px;
     margin: 40px 0;
-    line-height: 2;
     font-size: 14px;
 }
 
-.main .container .select-type .type-item .left {
+.main .container .choose-area .choose-item {
+    border-bottom: 1px solid #e5e5e5;
+    line-height: 30px;
+    margin: 14px 0;
+}
+
+.main .container .choose-area .choose-item:last-child {
+    border-bottom: none;
+}
+
+.main .container .choose-area .choose-item .left {
     float: left;
+    width: 60px;
+    text-align: right;
     color: #999;
 }
 
-.main .container .select-type .type-item .right {
-    float: right;
+.main .container .choose-area .choose-item .right {
+    float: left;
+    width: 990px;
 }
 
-.main .container .select-type .type-item .right ul li {
+.main .container .choose-area .choose-item .right ul li {
     float: left;
-    margin-right: 25px;
+    margin: 0 9px;
+}
+
+.main .container .choose-area .choose-item .right ul li:hover {
+    color: #ef4238;
+}
+
+.main .container .choose-area .choose-item .right ul li.selected {
+    color: #fff;
+    background-color: #ef4238;
+    border-radius: 15px;
+    padding: 0 5px;
+}
+
+.main .container .moive-list .moive-item {
+    float: left;
+    margin: 10px 0;
+    margin-right: 32px;
+    text-align: center;
+}
+
+.main .container .moive-list .moive-item:nth-child(6n) {
+    margin-right: 0;
+}
+
+.main .container .moive-list .moive-item .name {
+    width: 160px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main .container .moive-list .moive-item .score {
+    height: 60px;
+    line-height: 60px;
+    color: #ffb400;
+}
+
+.main .container .moive-list .moive-item .score  .integer-part {
+    font-size: 28px;
+}
+
+.main .container .pager {
+    /* margin: 0 auto; */
+    text-align: center;
+    margin: 32px 0;
+}
+
+.main .container .pager a {
+    border: 1px solid #d8d8d8;
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+.main .container .pager a:hover {
+    border-color: #ef4238;
+}
+
+.main .container .pager a.selected {
+    background-color: #ef4238;
+    color: #fff;
+    border-color: #ef4238;
 }
