@@ -1,4 +1,5 @@
 body {
+    /* 整个网页文字颜色 */
     color: #333;
     line-height: 1.5;
 }
@@ -40,7 +41,7 @@ body {
 }
 
 .main .container .choose-area .choose-item {
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px dotted #e5e5e5;
     line-height: 30px;
     margin: 14px 0;
 }
@@ -51,19 +52,19 @@ body {
 
 .main .container .choose-area .choose-item .left {
     float: left;
-    width: 60px;
-    text-align: right;
     color: #999;
 }
 
 .main .container .choose-area .choose-item .right {
     float: left;
-    width: 990px;
+    /* 浮动问题通过设置宽度，因为浮动宽度由内容撑开，会导致一行放不下，固定宽度就可以放下 */
+    width: 1010px;
 }
 
 .main .container .choose-area .choose-item .right ul li {
     float: left;
     margin: 0 9px;
+    padding: 0 5px;
 }
 
 .main .container .choose-area .choose-item .right ul li:hover {
@@ -74,7 +75,6 @@ body {
     color: #fff;
     background-color: #ef4238;
     border-radius: 15px;
-    padding: 0 5px;
 }
 
 .main .container .moive-list .moive-item {
@@ -82,17 +82,26 @@ body {
     margin: 10px 0;
     margin-right: 32px;
     text-align: center;
+    /* 要设置宽度，因为可能每张图片的宽度不一样！！！ */
+    width: 160px;
 }
 
 .main .container .moive-list .moive-item:nth-child(6n) {
     margin-right: 0;
 }
 
-.main .container .moive-list .moive-item .name {
+.main .container .moive-list .moive-item .poster img {
+    /* 要给图片设置宽度。高度，因为可能每张图片的宽度不一样！！！ */
     width: 160px;
+    height: 220px;
+}
+
+.main .container .moive-list .moive-item .name {
+    /* width: 160px; */
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding: 0 2px;
 }
 
 .main .container .moive-list .moive-item .score {
@@ -101,28 +110,11 @@ body {
     color: #ffb400;
 }
 
+/* :first-letter伪类选择器：选中第一个字符 */
+.main .container .moive-list .moive-item .score:first-letter {
+    font-size: 1.5em;
+}
+
 .main .container .moive-list .moive-item .score  .integer-part {
     font-size: 28px;
-}
-
-.main .container .pager {
-    /* margin: 0 auto; */
-    text-align: center;
-    margin: 32px 0;
-}
-
-.main .container .pager a {
-    border: 1px solid #d8d8d8;
-    padding: 5px 10px;
-    margin: 0 5px;
-}
-
-.main .container .pager a:hover {
-    border-color: #ef4238;
-}
-
-.main .container .pager a.selected {
-    background-color: #ef4238;
-    color: #fff;
-    border-color: #ef4238;
 }

@@ -3,3 +3,30 @@
     display: block;
     clear: both;
 }
+
+/* 其他页面也会用到分页器 */
+.pager {
+    /* 块盒采用margin */
+    /* margin: 0 auto; */
+    
+    /* 行盒居中用text-align: center; */
+    text-align: center;
+    margin: 32px 0;
+}
+
+.pager a {
+    border: 1px solid #d8d8d8;
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+.pager a:hover {
+    border-color: #ef4238;
+}
+
+.pager a.selected {
+    background-color: #ef4238;
+    color: #fff;
+    /* border-color: #ef4238; */
+    border: none;
+}
