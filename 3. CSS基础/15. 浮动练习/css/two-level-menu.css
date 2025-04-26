@@ -58,10 +58,6 @@
     display: block;
 }
 
-.header .top-nav>li .submenu .subnav {
-    margin-left: 10px;
-}
-
 /* 使用伪元素来覆盖顶级菜单的底边框 */
 .header .top-nav>li:hover::after {
     content: '';
@@ -72,8 +68,4 @@
     position: absolute;
     left: 0;
     bottom: 0;
-}
-
-.main {
-    background-color: #008c8c;
 }
