@@ -48,7 +48,7 @@
     right: -1px;
     width: 300px;
     border: 1px solid #ccc;
-    z-index: -1;
+    /* z-index: -1; */
     text-align: left;
     line-height: 1.5;
     background-color: #fff; 
@@ -60,6 +60,18 @@
 
 .header .top-nav>li .submenu .subnav {
     margin-left: 10px;
+}
+
+/* 使用伪元素来覆盖顶级菜单的底边框 */
+.header .top-nav>li:hover::after {
+    content: '';
+    /* display: block; */ /* 有设置绝对定位就不需要position: absolute; */
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 .main {
