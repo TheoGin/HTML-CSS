@@ -5,32 +5,33 @@
 }
 
 .header {
-    position: fixed;
-    /* 设置了position: fixed定位，宽度就变成自适应内容，所以要设置宽度 */
-    width: 100%;
     height: 40px;
     background-color: #e3e4e5;
+    position: fixed;
+    left: 0;
+    top: 0;
+    /* 设置了position: fixed定位，宽度就变成自适应内容，所以要设置宽度 */
+    width: 100%;
 }
 
-.header .top-nav {
-    margin-left: 100px;
-}
-
-.header .top-nav .nav-item {
-    position: relative;
+.header .top-nav>li {
     float: left;
     color: #999;
-    /* margin: 0 40px; */
+    margin: 0 20px;
     text-align: center;
     line-height: 40px;
     width: 150px;
-    /* height: 40px; */
+    /* 不然背景会影响子元素二级菜单也显示 */
+    height: 40px;
 
     /* 不设置border-box，水平方向内容会抖动 */
     box-sizing: border-box;
+
+    position: relative;
 }
 
-.header .top-nav .nav-item:hover {
+/* 子元素选择器>，只选子元素的li */
+.header .top-nav>li:hover {
     background-color: #fff;
     border: 1px solid #ccc;
     border-bottom: none;
@@ -38,8 +39,10 @@
     /* 因为边框多了border: 1px solid #ccc;，如果不重新设置行高，垂直方向会抖动 */
     line-height: 39px;
 }
-.header .top-nav .nav-item .submenu {
+.header .top-nav>li .submenu {
+    /* 不生成盒子 */
     display: none;
+    
     position: absolute;
     top: 38px;
     right: -1px;
@@ -51,11 +54,11 @@
     background-color: #fff; 
 }
 
-.header .top-nav .nav-item:hover .submenu {
+.header .top-nav>li:hover .submenu {
     display: block;
 }
 
-.header .top-nav .nav-item .submenu .subnav {
+.header .top-nav>li .submenu .subnav {
     margin-left: 10px;
 }
 
