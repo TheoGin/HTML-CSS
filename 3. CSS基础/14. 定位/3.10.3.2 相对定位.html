@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        height: 50px;
+        background-color: red;
+        border: 2px solid #000;
+      }
+    </style>
+  </head>
+  <body style="margin: 70px; padding: 20px">
+    <!-- margin-left和left: 50px区别（前提，没有设置宽度）：
+         - margin-left：盒子整体宽度变小，腾出50px给margin-left
+         - left: 50px：只是向包含块的内容盒 左边偏移 50px，盒子整体宽度不变
+    -->
+    <div style="margin-left: 50px"></div>
+    <div style="position: relative; left: 50px"></div>
+    <div></div>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .item {
+        width: 70px;
+        height: 70px;
+        border: 5px solid;
+        border-radius: 50%;
+        /* 2. 只有定位元素设置z-index有效 */
+        position: absolute;
+      }
+      .circle1 {
+        top: 0;
+        left: 0;
+        border-color: blue;
+        /* 1. 设置z-index，通常情况下，该值越大，越靠近用户 */
+        z-index: 5;
+      }
+      .circle2 {
+        top: 0;
+        left: 70px;
+        border-color: black;
+        z-index: 4;
+      }
+      .circle3 {
+        top: 0;
+        left: 140px;
+        border-color: red;
+        background-color: red;
+        /* 3. z-index可以是负数，如果是负数，则遇到常规流、浮动元素，则会被其覆盖 */
+        z-index: -1;
+      }
+      .circle4 {
+        top: 50px;
+        left: 35px;
+        border-color: yellow;
+        z-index: 2;
+      }
+      .circle5 {
+        top: 50px;
+        left: 105px;
+        border-color: green;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="item circle1"></div>
+    <div class="item circle2"></div>
+    <div class="item circle3"></div>
+    <div class="item circle4"></div>
+    <div class="item circle5"></div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odio quasi ipsam quisquam facere dolore eius culpa porro deleniti, soluta commodi velit, eaque officia praesentium ipsa, distinctio fugit nobis mollitia vitae tenetur quidem alias esse. Accusantium nulla itaque animi velit assumenda consequatur, fuga laborum quae nesciunt! Numquam laborum dolorem sequi!
+  </body>
+</html>
