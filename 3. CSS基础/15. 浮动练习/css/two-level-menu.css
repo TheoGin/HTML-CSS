@@ -5,8 +5,9 @@
 }
 
 .header {
-    width: 100%;
     position: fixed;
+    /* 设置了position: fixed定位，宽度就变成自适应内容，所以要设置宽度 */
+    width: 100%;
     height: 40px;
     background-color: #e3e4e5;
 }
@@ -23,25 +24,36 @@
     text-align: center;
     line-height: 40px;
     width: 150px;
+    /* height: 40px; */
+
+    /* 不设置border-box，水平方向内容会抖动 */
+    box-sizing: border-box;
 }
 
 .header .top-nav .nav-item:hover {
     background-color: #fff;
     border: 1px solid #ccc;
     border-bottom: none;
+    
+    /* 因为边框多了border: 1px solid #ccc;，如果不重新设置行高，垂直方向会抖动 */
+    line-height: 39px;
 }
-
 .header .top-nav .nav-item .submenu {
+    display: none;
     position: absolute;
-    top: 39px;
+    top: 38px;
     right: -1px;
     width: 300px;
     border: 1px solid #ccc;
     z-index: -1;
     text-align: left;
     line-height: 1.5;
+    background-color: #fff; 
 }
 
+.header .top-nav .nav-item:hover .submenu {
+    display: block;
+}
 
 .header .top-nav .nav-item .submenu .subnav {
     margin-left: 10px;
