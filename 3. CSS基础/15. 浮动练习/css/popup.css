@@ -2,7 +2,7 @@
     width: 100%;
 }
 
-.popup-area {
+.modal {
     position: fixed;
     /* fixed包含块是视口，跟内容没有关系 */
     top: 0;
@@ -12,7 +12,7 @@
     background-color: rgba(0, 0, 0, .5);
 }
 
-.popup-area .modal {
+.modal .container {
     /* position: fixed; */
     /* 父元素已经是固定定位了，即它的包含块已经固定定位，那子元素只需要决定定位即可固定 */
     position: absolute;
@@ -30,7 +30,7 @@
     box-sizing: border-box;
 }
 
-.popup-area .modal .close {
+.modal .container .close {
     position: absolute;
     /* 宽度高度的负一半 */
     right: -15px;
