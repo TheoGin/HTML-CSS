@@ -77,20 +77,26 @@
 }
 
 .carousel .footer .title {
+    float: left;
     font-weight: 700;
 }
 
 .carousel .footer .dots {
-    height: 8px;
+    /* height: 8px;
     position: absolute;
     top: 1px;
     bottom: 0;
     margin: auto 0;
-    right: 20px;
+    right: 20px; */
+
+    float: right;
 }
 
 .carousel .footer .dots li {
-    float: left;
+    /* float: left; */
+
+    /* 使用行块盒让所有的`li`显示在一行上，这样相当于文字，可以继承祖先元素的行高样式 */
+    display: inline-block;
     width: 8px;
     height: 8px;
     background-color: rgba(255, 255, 255, .8);
