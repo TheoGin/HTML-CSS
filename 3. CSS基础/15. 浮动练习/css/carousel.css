@@ -1,8 +1,8 @@
-.clearfix::after {
+/* .clearfix::after {
     content: '';
     display: block;
     clear: both;
-}
+} */
 
 .carousel {
     position: relative;
@@ -46,6 +46,7 @@
     top: 0;
     bottom: 0;
     margin: auto 0;
+    font-family: Arial;
 }
 
 .carousel .left {
@@ -63,7 +64,7 @@
     border-radius: 50%;
 }
 
-.carousel .footer {
+.carousel .modal {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -76,12 +77,12 @@
     color: #fff;
 }
 
-.carousel .footer .title {
+.carousel .modal .title {
     float: left;
     font-weight: 700;
 }
 
-.carousel .footer .dots {
+.carousel .modal .dots {
     /* height: 8px;
     position: absolute;
     top: 1px;
@@ -92,19 +93,20 @@
     float: right;
 }
 
-.carousel .footer .dots li {
+.carousel .modal .dots li {
     /* float: left; */
 
     /* 使用行块盒让所有的`li`显示在一行上，这样相当于文字，可以继承祖先元素的行高样式 */
     display: inline-block;
+
     width: 8px;
     height: 8px;
     background-color: rgba(255, 255, 255, .8);
-    margin: 0 5px;
+    margin: 0 2px;
     border-radius: 50%;
     cursor: pointer;
 }
 
-.carousel .footer .dots li:hover {
+.carousel .modal .dots li:hover {
     background-color: rgb(0, 123, 255);
 }
