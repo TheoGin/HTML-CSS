@@ -1,48 +1,48 @@
 .main img {
-    width: 100%;
+  width: 100%;
 }
 
 .modal {
-    position: fixed;
-    /* fixed包含块是视口，跟内容没有关系 */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .5);
+  position: fixed;
+  /* fixed包含块是视口，跟内容没有关系 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal .container {
-    /* position: fixed; */
-    /* 父元素已经是固定定位了，即它的包含块已经固定定位，那子元素只需要决定定位即可固定 */
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    width: 404px;
-    height: 512px;
-    background-color: #fff;
-    /* 弧度为宽高的50% */
-    border-radius: 10px;
-    padding: 20px;
-    box-sizing: border-box;
+  /* position: fixed; */
+  /* 父元素已经是固定定位了，即它的包含块已经固定定位，那子元素只需要决定定位即可固定 */
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 404px;
+  height: 512px;
+  background-color: #fff;
+  /* 弧度为宽高的50% */
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .modal .container .close {
-    position: absolute;
-    /* 宽度高度的负一半 */
-    right: -15px;
-    top: -15px;
-    width: 30px;
-    height: 30px;
-    background-color: red;
-    color: #fff;
-    line-height: 26px;
-    text-align: center;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    box-sizing: border-box;
-    cursor: pointer;
+  position: absolute;
+  /* 宽度高度的负一半 */
+  right: -15px;
+  top: -15px;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  color: #fff;
+  line-height: 26px;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  cursor: pointer;
 }
