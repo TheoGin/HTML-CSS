@@ -9,12 +9,23 @@
     width: 520px;
     height: 304px;
     margin: 10px auto;
+    overflow: hidden;
 }
 
-.carousel img {
-    position: absolute;
+.carousel .imgs {
+    width: 1560px;
+    height: 304px;
+}
+
+.carousel .imgs a {
+    /* 有设置高度就不会高度坍塌，就不需要清除浮动 */
+    float: left;
+}
+
+.carousel .imgs img {
+    /* position: absolute;
     left: 0;
-    top: 0;
+    top: 0; */
     width: 520px;
     height: 304px;
 }
