@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 必须是li元素，必须是第奇数个子元素 */
+      /* ul li:nth-child(2n+1) {
+        color: red;
+      } */
+      /* 有元素穿插时，可以用nth-of-type */
+      ul li:nth-of-type(2n+1) {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <p>p元素</p>
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Placeat porro maiores suscipit. Esse!</li>
+      <p>p元素</p>
+      <li>Nostrum, perspiciatis! A, exercitationem consequuntur.</li>
+      <li>Nobis quidem beatae quaerat tempora.</li>
+      <p>p元素</p>
+      <li>Officiis error natus quidem eos.</li>
+      <li>Iusto ut praesentium sit iure?</li>
+      <li>Et earum praesentium veritatis hic!</li>
+      <p>p元素</p>
+      <li>Cum aspernatur repudiandae pariatur tempore!</li>
+      <p>p元素</p>
+      <li>Optio dolor nesciunt perspiciatis tenetur!</li>
+      <li>Nostrum et rerum deleniti fugit.</li>
+    </ul>
+  </body>
+</html>
