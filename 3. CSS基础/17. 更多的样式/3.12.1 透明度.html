@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 300px;
+        height: 200px;
+        background-color: lightblue;
+        padding: 30px;
+        margin: auto;
+      }
+      .box {
+        width: 200px;
+        background-color: #f00;
+        border: 5px solid #000;
+        padding: 10px;
+        /* 1. opacity，它设置的是整个元素的透明 */
+        /* opacity: 0.2; */
+
+        /* 背景覆盖改为（默认边框盒）：填充盒 */
+        background-clip: padding-box;
+
+        /* 2. 在颜色位置设置alpha通道(rgba )，可以精确设置边框、背景、文字的颜色 */
+        border-color: rgba(0, 0, 0, .7);
+        background-color: rgba(255, 0, 0, .5);
+        color: rgba(0, 0, 0, .9);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+        exercitationem?
+      </div>
+    </div>
+  </body>
+</html>
