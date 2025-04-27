@@ -24,7 +24,6 @@
   width: 404px;
   height: 512px;
   background-color: #fff;
-  /* 弧度为宽高的50% */
   border-radius: 10px;
   padding: 20px;
   box-sizing: border-box;
@@ -41,6 +40,7 @@
   color: #fff;
   line-height: 26px;
   text-align: center;
+  /* 弧度为宽高的50%即可实现圆角 */
   border-radius: 50%;
   border: 2px solid #fff;
   box-sizing: border-box;
