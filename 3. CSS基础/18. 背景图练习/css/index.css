@@ -1,3 +1,9 @@
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
 body {
     /* background: url("../img/bg.jpg") no-repeat 0 0/100%; */
     background: url("../img/bg.jpg") no-repeat center top;
@@ -5,7 +11,7 @@ body {
     /* min-width: 1024px; */
 }
 
-.header .nav {
+.header {
     width: 1198px;
     height: 73px;
     margin: 45px auto 0;
@@ -18,11 +24,14 @@ body {
 .header .nav a {
     width: 161px;
     height: 73px;
-    display: inline-block;
+    display: block;
+    float: left;
     color: #f8b770;
+    border: 1px solid #f8b77030;
+    box-sizing: border-box;
 }
 
-.header .nav .logo {
+.header .logo {
     width: 238px;
     height: 118px;
     background: url("../img/logo.png");
@@ -31,4 +40,8 @@ body {
     right: 0;
     bottom: 0;
     margin: 0 auto;
+}
+
+.header .nav a:nth-child(3){
+    margin-right: 232px;
 }
