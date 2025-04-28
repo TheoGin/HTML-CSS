@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: lightblue;
+        /* 1. auto：默认值，浏览器根据当前内容决定指针样式，例如当内容是文字时使用 text 样式 */
+        cursor: auto;
+
+        /* 2. pointer：悬浮于连接上时，通常为手 */
+        cursor: pointer;
+
+        /* 3. help：指示帮助 */
+        cursor: help;
+
+        /* 4. e-resize：缩放窗口 */
+        cursor: e-resize;
+
+        /* 5. 属性值为设置的图片，后缀为.ico | .cur，而不是png那些 */
+        cursor: url("imgs/target.ico"), auto; /* 图片生效时，使用默认值auto，类似与font-family的属性值（要加逗号！！！） */
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        /* 1. url可以不写引号，防止有特殊字符，一般还是写上 */
+        /* 2. background-image: url("imgs/target.ico"); */
+
+        /* 默认情况下，背景图会在横坐标和纵坐标中进行重复 */
+        /* background-repeat: no-repeat; */
+      }
+      div {
+        width: 500px;
+        height: 300px;
+        border: 2px solid;
+        background-image: url(imgs/main_bg.jpg);
+        background-repeat: no-repeat;
+
+        /*  3. background-size预设值：contain、cover，类似于object-fit */
+        background-size: contain;
+
+        /* background-size为数值或百分比 */
+        background-size: 200px 150px;
+        background-size: 80% 50%;
+
+        /* 4. background-position：设置背景图的位置（左边y，右边x）。  - 预设值：left、bottom、right、top、center */
+        background-position: bottom center;
+        /*以上展开：
+        background-position-x: center;
+        background-position-y: bottom; */
+
+        /* background-position：数值或百分比（左边x，右边y） */
+        background-position: 0px 0px; /* 左上角 */
+        background-position: 47% 64%;
+        /*以上展开：
+        background-position-x: 47%;
+        background-position-y: 64%; */
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
