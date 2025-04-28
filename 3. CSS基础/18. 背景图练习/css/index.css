@@ -38,10 +38,61 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -8px;
     margin: 0 auto;
 }
 
 .header .nav a:nth-child(3){
     margin-right: 232px;
+}
+
+.main .btns {
+    width: 646px;
+    margin: 473px auto 0;
+}
+
+.main .btns .detail,
+.main .btns .download {
+    display: block;
+    width: 323px;
+    height: 105px;
+    float: left;
+}
+
+.main .btns .detail {
+    background: url("../img/btns.png") no-repeat 0 0;
+}
+
+.main .btns .download {
+    background: url("../img/btns.png") no-repeat -323px 0;
+}
+
+.main .advertisement {
+    width: 1203px;
+    margin: 76px auto;
+}
+
+.main .advertisement .item {
+    float: left;
+    margin-right: 13px;
+    width: 290px;
+    height: 200px;
+}
+
+.main .advertisement .item:last-child {
+    margin-right: 0;
+}
+
+.main .advertisement .item .title {
+    width: 100%;
+    height: 50px;
+    background-color: #211510;
+    color: #f8b770;
+    line-height: 50px;
+    text-align: center;
+}
+
+.main .advertisement .item .poster img {
+    width: 290px;
+    height: 150px;
 }
