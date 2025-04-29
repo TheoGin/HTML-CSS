@@ -6,6 +6,7 @@
 
 body {
     /* background: url("../img/bg.jpg") no-repeat 0 0/100%; */
+    /* 0 0/100% 窗口网页尺寸没那么大，图片会导致变小，导致距离不太够 ——> center top（左右居中，上下为0） */
     background: url("../img/bg.jpg") no-repeat center top;
     /* background-size: cover; */
     /* min-width: 1024px; */
@@ -19,16 +20,33 @@ body {
     line-height: 73px;
     text-align: center;
     position: relative;
+
+    /* logo也有边框 ——> 这里只设置给a设置左右，给header设置上下 */
+    border: 1px solid #f8b77030;
+    border-left: none;
+    border-right: none;
+    /* border-top: 1px solid #f8b77030;
+    border-bottom: 1px solid #f8b77030; */
 }
 
 .header .nav a {
     width: 161px;
     height: 73px;
-    display: block;
-    float: left;
+    /* display: block; */
+    float: left; /* 浮动元素就是块盒 */
     color: #f8b770;
-    border: 1px solid #f8b77030;
     box-sizing: border-box;
+
+    /* logo也有边框 ——> 这里只设置给a设置左右，给header设置上下 */
+    border: 1px solid #f8b77030;
+    border-top: none;
+    border-bottom: none;
+    /* border-left: 1px solid #f8b77030;
+    border-right: 1px solid #f8b77030; */
+}
+
+.header .logo h1 {
+    display: none;
 }
 
 .header .logo {
@@ -49,6 +67,10 @@ body {
 .main .btns {
     width: 646px;
     margin: 473px auto 0;
+}
+
+.main .btns span {
+    display: none;
 }
 
 .main .btns .detail,
@@ -77,6 +99,8 @@ body {
     margin-right: 13px;
     width: 290px;
     height: 200px;
+    border: 1px solid #f8b77030;
+    box-sizing: border-box;
 }
 
 .main .advertisement .item:last-child {
@@ -90,9 +114,10 @@ body {
     color: #f8b770;
     line-height: 50px;
     text-align: center;
+    border-bottom: 1px solid #f8b77030;
 }
 
 .main .advertisement .item .poster img {
-    width: 290px;
-    height: 150px;
+    width: 288px;
+    height: 147px;
 }
