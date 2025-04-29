@@ -79,14 +79,17 @@ body {
     width: 323px;
     height: 105px;
     float: left;
+
+    /* 雪碧图可以写在一起，针对位置进行调整 */
+    background: url("../img/btns.png") no-repeat;
 }
 
-.main .btns .detail {
-    background: url("../img/btns.png") no-repeat 0 0;
-}
+/* .main .btns .detail {
+    background: url("../img/btns.png") no-repeat 0 0; 默认就是 0 0（左上角）
+} */
 
 .main .btns .download {
-    background: url("../img/btns.png") no-repeat -323px 0;
+    background-position: -323px 0;
 }
 
 .main .advertisement {
