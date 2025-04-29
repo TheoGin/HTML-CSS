@@ -99,7 +99,11 @@ body {
     margin-right: 13px;
     width: 290px;
     height: 200px;
-    border: 1px solid #f8b77030;
+
+    /* border: 1px solid #f8b77030; */
+    /* 仔细看有边框，可以加外边框，这样就不需要重新算 */
+    outline: 1px solid #f8b77030;
+
     box-sizing: border-box;
 }
 
@@ -115,9 +119,10 @@ body {
     line-height: 50px;
     text-align: center;
     border-bottom: 1px solid #f8b77030;
+    box-sizing: border-box;
 }
 
 .main .advertisement .item .poster img {
-    width: 288px;
-    height: 147px;
+    width: 290px;
+    height: 150px;
 }
