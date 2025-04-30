@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      object,
+      embed {
+        width: 800px;
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- object元素
+        - data：资源地址
+        - type：资源类型
+    -->
+    <object data="./example.swf" type="application/x-shockwave-flash">
+      <!-- 有些flash元素需要传递参数（质量：高） -->
+      <param name="quality" value="high" />
+    </object>
+
+    <!-- 等价上面写法 -->
+    <embed
+      quality="high"
+      src="./example.swf"
+      type="application/x-shockwave-flash"
+    />
+
+    <!-- 兼容的写法
+      1） object元素能识别，embed元素是不能作为object元素的子元素，就会忽略
+      2）object元素不能识别，会使用embed元素
+    -->
+    <object data="./example.swf" type="application/x-shockwave-flash">
+      <param name="quality" value="high" />
+      <embed
+        quality="high"
+        src="./example.swf"
+        type="application/x-shockwave-flash"
+      />
+    </object>
+  </body>
+</html>
