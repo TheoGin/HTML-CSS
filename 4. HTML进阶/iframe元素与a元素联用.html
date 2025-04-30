@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      iframe {
+        width: 100%;
+        height: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- a元素target的另一个用法 -->
+    <a href="https://www.sina.com.cn/" target="myIframe">新浪</a>
+    <a href="https://www.douyu.com/" target="myIframe">斗鱼</a>
+    <a href="https://www.bilibili.com/" target="myIframe">B站</a>
+    <iframe
+      name="myIframe"
+      src="https://www.bilibili.com/"
+      frameborder="0"
+    ></iframe>
+  </body>
+</html>
