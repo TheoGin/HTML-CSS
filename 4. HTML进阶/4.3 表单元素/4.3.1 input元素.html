@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <!-- 普通文本输入框 -->
+      <input type="text" placeholder="请输入账号" />
+    </div>
+
+    <div>
+      <!-- 密码框 -->
+      <input type="password" placeholder="请输入密码" />
+    </div>
+
+    <div>
+      <!-- 日期选择框：弹出框调的是操作系统，样式不可改 -->
+      <input type="date" />
+    </div>
+
+    <div>
+      <!-- 搜索框（在手机上，右下角换行会变成搜索） -->
+      <input type="search" value="搜索关键字（默认值）" />
+    </div>
+
+    <div>
+      <!-- 数字输入框 -->
+      <input type="number" min="0" max="50" step="10" value="3" />
+    </div>
+
+    <div>
+      <!-- 多选框 -->
+      爱好：
+      <input type="checkbox" name="hobby" />运动
+      <input type="checkbox" name="hobby" />学习
+      <input type="checkbox" name="hobby" checked="checked" />编程
+    </div>
+
+    <div>
+      <!-- 单选框 -->
+      性别：
+      <input type="radio" name="gender" />男
+      <input type="radio" name="gender" checked />女
+    </div>
+
+    <div>
+      请选择文件：<input type="file" name="" id="">
+    </div>
+
+    <div>
+      <!-- 滑块，值需要通过JS读取 -->
+      滑块：<input type="range" min="0" max="5" />
+    </div>
+
+    <div>
+      <!-- 颜色选择：弹出框调的是操作系统，样式不可改 -->
+      颜色选择：<input type="color" name="" id="" />
+    </div>
+
+    <div>
+      <!-- input元素可以制作按钮（兼容性好），但建议用button元素做按钮 -->
+      <input type="button" value="普通按钮" />
+      <input type="reset" />
+      <input type="submit" value="SUBMIT" />
+    </div>
+  </body>
+</html>

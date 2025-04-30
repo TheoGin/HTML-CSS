@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      请选择城市：
+      <!-- 下拉列表选择框 -->
+      <select name="">
+        <!-- 1. 通常和option元素配合使用 -->
+        <option value="">Lorem.</option>
+        <option value="">Omnis.</option>
+        <option selected value="">Tempora.</option>
+        <option value="">Minima.</option>
+        <option value="">Repellat?</option>
+      </select>
+    </div>
+
+    <div>
+      <!-- 2. select元素里面可以进行分组 -->
+      选择最喜欢的分组：
+      <select name="" id="">
+        <!-- 子元素：optgroup，分组不能选择。属性：    - label：分组名字 -->
+        <optgroup label="分组名1">
+          <option value="">选项1</option>
+        </optgroup>
+        <optgroup label="分组名2">
+          <option value="">Lorem.</option>
+          <option value="">Tempore.</option>
+          <option value="">Odio?</option>
+        </optgroup>
+      </select>
+    </div>
+
+    <div>
+      选择喜欢的分组：
+      <!-- 默认只能选一个；需要选多个要加上multiple属性（布尔属性multiple="multiple"），按住ctr | shift键进行多选 -->
+      <select name="" id="" multiple>
+        <optgroup label="分组名1">
+          <option value="">选项1</option>
+        </optgroup>
+        <optgroup label="分组名2">
+          <option value="">Lorem.</option>
+          <option value="">Tempore.</option>
+          <option value="">Odio?</option>
+        </optgroup>
+      </select>
+    </div>
+  </body>
+</html>

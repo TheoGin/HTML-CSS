@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        性别：
+        <!-- 错误写法，显示关联 文字需要写到label元素里面 -->
+        <input type="radio" name="gender" id="radMale">男
+        <label for="radMale"></label>
+
+        <input type="radio" name="gender" id="radFemale">女
+        <label for="radFemale"></label>
+    </div>
+    <div>
+        性别：
+        <!-- 1. 显示关联：可以通过for属性，让label元素关联某一个表单元素，for属性书写表单元素id的值 -->
+        <input type="radio" name="gender" id="radMale">
+        <label for="radMale">男</label>
+
+        <input type="radio" name="gender" id="radFemale">
+        <label for="radFemale">女</label>
+    </div>
+
+    <div>
+        性别：
+        <!-- 2. 隐式关联：作为label子元素，可以省略for属性和id属性 -->
+        <label>
+            <input type="radio" name="gender">男
+        </label>
+
+        <label>
+            <input type="radio" name="gender">女
+        </label>
+    </div>
+</body>
+</html>
