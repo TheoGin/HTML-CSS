@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input:checked {
+        /* 没有效果，因为input是可替换元素 */
+        background-color: red;
+      }
+
+      /* +选中的是后面出现的第一个兄弟元素 */
+      input:checked+label {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="radio" name="gender" id="radMale">
+    <label for="radMale">男</label>
+
+    <input type="radio" name="gender" id="radFemale">
+    <label for="radFemale">女</label>
+  </body>
+</html>

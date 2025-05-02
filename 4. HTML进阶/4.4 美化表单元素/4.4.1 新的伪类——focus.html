@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        color: #999;
+      }
+      input:focus {
+        outline: none;
+        /* :focus-visible { outline: -webkit-focus-ring-color auto 1px; }。outline: red auto 5px;当外边框样式为auto的时候，边框尺寸没有效果  */
+        outline: 1px solid #008c8c;
+        color: #000;
+
+        /* 外边框的偏移量 */
+        /* outline-offset: 0; */
+        
+      }
+    </style>
+  </head>
+  <body>
+    <!-- tabindex控制按tab键的切换顺序 -->
+    <a tabindex="2" href="https://www.baidu.com">百度</a>
+    <p>
+      <input tabindex="1" type="text" />
+    </p>
+    <p>
+      <button tabindex="3">提交</button>
+    </p>
+  </body>
+</html>

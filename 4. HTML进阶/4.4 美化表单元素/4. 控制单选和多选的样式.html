@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .radio-item .radio {
+        width: 12px;
+        height: 12px;
+        border: 1px solid #999;
+        display: inline-block;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      .radio-item input:checked + span.radio {
+        border-color: #008c8c;
+      }
+
+      .radio-item input:checked + .radio::after {
+        content: "";
+        display: block;
+        width: 5px;
+        height: 5px;
+        background-color: #008c8c;
+        /* 边框颜色不应该写在这里 */
+        /* border-color: #008c8c; */
+        border-radius: 50%;
+        margin-left: 3.5px;
+        margin-top: 3.5px;
+      }
+
+      /* 文字颜色对<span class="radio"></span>没效果。或者取个类名 */
+      /* label input[type="radio"]:checked~span.radio-info {
+        color: #008c8c;
+      } */
+      .radio-item input[type="radio"]:checked ~ span {
+        /* 选中的是后面出现的所有兄弟元素 */
+        color: #008c8c;
+      }
+
+      .radio-item input[type="radio"] {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      请选择性别：
+      <!-- label的子元素不能是div元素！！ -->
+      <label class="radio-item">
+        <input type="radio" name="gender" />
+        <span class="radio"></span>
+        <span class="radio-info">男</span>
+      </label>
+
+      <label class="radio-item">
+        <input type="radio" name="gender" />
+        <span class="radio"></span>
+        <span class="radio-info">女</span>
+      </label>
+    </div>
+  </body>
+</html>

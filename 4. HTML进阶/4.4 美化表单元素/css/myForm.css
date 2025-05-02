@@ -1,0 +1,16 @@
+div {
+    margin: 10px 0;
+}
+
+input[type="text"], select, textarea {
+    border: 1px solid lightblue;
+}
+
+input[type="text"]:focus, select:focus, textarea:focus {
+    border: 1px solid #008c8c;
+}
+
+button {
+    border: 1px solid #008c8c;
+    border-radius: 5px;
+}
