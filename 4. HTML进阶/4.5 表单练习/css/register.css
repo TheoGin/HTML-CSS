@@ -47,7 +47,7 @@
 .form .password,
 .form .phone,
 .form .check-code { */
-.form input:not(input[type="checkbox"]) {
+.form input {
     width: 423px;
     height: 40px;
     border: 1px solid #ccc;
@@ -160,7 +160,7 @@
     text-align: right;
 }
 
-.form input:not(input[type="checkbox"]):focus {
+.form input:focus {
     border-color: #00a1d6;
 }
 
@@ -184,6 +184,6 @@
     right: -85px;
 }
 
-.form .error + input:not(input[type="checkbox"]) {
+.form .error + input {
     border-color: #f45d90;
 }
