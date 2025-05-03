@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/register-update.css" />
+  </head>
+  <body>
+    <form class="form">
+      <!-- 一般不会用h1，logo部分才用h1 -->
+      <h2>
+        <span> 注册 </span>
+      </h2>
+
+      <div class="form-area">
+
+        <!-- 给form-item加上类名haserror，方便控制form-item里面的所有元素错误样式 -->
+        <div class="form-item haserror">
+          <input type="text" placeholder="账号" />
+          <div class="error">该昵称已被他人使用</div>
+        </div>
+
+        <div class="form-item haserror">
+          <input
+            type="password"
+            placeholder="密码（6-16个字符组成，区分大小写）"
+          />
+          <div class="error">密码强度不够</div>
+        </div>
+
+        <div class="form-item">
+          <div class="select clearfix">
+            <div class="select-item">
+              <div class="title">中国大陆</div>
+              <ul>
+                <li>Lorem.</li>
+                <li>Possimus.</li>
+                <li class="active">中国大陆</li>
+                <li>Omnis!</li>
+                <li>Alias.</li>
+                <li>Incidunt!</li>
+                <li>Placeat?</li>
+                <li>Accusantium?</li>
+                <li>Ratione.</li>
+                <li>Sed.</li>
+                <li>Omnis!</li>
+                <li>Alias.</li>
+                <li>Incidunt!</li>
+                <li>Placeat?</li>
+                <li>Accusantium?</li>
+                <li>Ratione.</li>
+                <li>Sed.</li>
+                <li>Omnis!</li>
+                <li>Alias.</li>
+                <li>Incidunt!</li>
+                <li>Placeat?</li>
+                <li>Accusantium?</li>
+                <li>Ratione.</li>
+                <li>Sed.</li>
+                <li>Omnis!</li>
+                <li>Alias.</li>
+                <li>Incidunt!</li>
+                <li>Placeat?</li>
+                <li>Accusantium?</li>
+                <li>Ratione.</li>
+                <li>Sed.</li>
+              </ul>
+            </div>
+            <div class="input">
+              <input type="tel" placeholder="填写常用的手机号" />
+            </div>
+          </div>
+        </div>
+
+        <div class="form-item">
+          <input type="text" placeholder="请输入短信验证码" />
+          <!-- 默认是submit。sn：serial number -->
+          <button type="button" class="btn-sncode">点击获取</button>
+        </div>
+
+        <div class="readme">
+          <label>
+            <input type="checkbox" />
+            <span class="checkbox"></span>
+            <span
+              >我已同意 <a href="">《哔哩哔哩弹幕网用户使用协议》</a> 和
+              <a href="">《哔哩哔哩弹幕网账号中心规范》</a>
+            </span>
+          </label>
+        </div>
+
+        <div class="form-item">
+          <button disabled class="fill">注册</button>
+        </div>
+
+        <div class="readme txt-align-right">
+          <a href="">已有账号，直接登录&gt;</a>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

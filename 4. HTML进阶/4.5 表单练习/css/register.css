@@ -89,10 +89,12 @@
     display: none;
     cursor: pointer;
     border-radius: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
 .form .phone .select li {
-    padding: 10px;
+    /* padding: 10px; */
     height: 40px;
 }
 
