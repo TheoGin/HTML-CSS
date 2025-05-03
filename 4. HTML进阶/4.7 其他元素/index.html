@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 8. meta：还可以用于搜索引擎优化（SEO） -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 关键词keywords的content：要用英文逗号！！ -->
+    <meta name="keywords" content="在线商城,购物,网购" />
+    <meta name="description" content="用来购物的" />
+    <title>其他元素</title>
+    <!--  9. link
+        - type属性：链接的资源的MIME类型
+        - rel属性：relation，链接的资源和当前网页的关系
+        浏览器会根据rel="stylesheet"推出type="text/css"，所以type可以省略 -->
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <!-- - 链接外部资源（CSS、图标），可以不写，但要放在根目录！！建议写上 -->
+    <!-- <link rel="icon" type="image/x-icon" href="./favicon.ico"> -->
+     <!-- shortcut可以省略 -->
+     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <p>
+      <!-- 1. abbr元素：缩写词（abbreviation），会用title属性写全称 -->
+      <abbr title="cascading style sheet">CSS</abbr> 是用于为页面添加样式
+    </p>
+
+    <p>
+      <!-- 2. time元素：提供给浏览器或搜索引擎阅读的时间 -->
+      <time datetime="2025-05-03">今年5月</time> 我学习了HTML 和 CSS的课程
+    </p>
+
+    <p>
+      <!-- 3. b（bold）：以前是一个无语义元素，主要用于加粗字体。Stylistically separated text of equal importance, such as a product name. -->
+      我们学校有两个课程非常受欢迎，<b>HTML&CSS</b> 和 <b>JS</b>
+    </p>
+
+    <p>
+      <!-- 4. q（quote）：一小段引用文本。默认会用伪元素加上双引号 -->
+      最近热播的美剧《权力的游戏》中有一句经典台词：<q
+        >在权力的斗争中，非胜即死，没有中间状态</q
+      >
+    </p>
+
+    <!-- 5. blockquote：大段引用的文本。cite属性填写引用链接 -->
+    <blockquote
+      cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote"
+    >
+      The HTML &lt; blockquote &gt; Element (or HTML Block Quotation Element)
+      indicates that the enclosed text is an extended quotation. Usually, this
+      is rendered visually by indentation (see Notes for how to change it). A
+      URL for the source of the quotation may be given using the cite attribute,
+      while a text representation of the source can be given using the &lt; cite
+      &gt; element.
+    </blockquote>
+
+    <p>
+      <!-- 
+        6. br：不能控制元素的样式
+            - 无语义
+            - 主要用于在文本中换行
+        -->
+      收获地址：<br />
+      中国四川省 <br />
+      成都市 成华区 <br />
+      XXXX街XXX号
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <!-- 
+        7. hr
+            - 无语义
+            - 主要用于分割
+        -->
+        <hr>
+      Blanditiis earum libero ratione, eaque saepe vel assumenda. Obcaecati
+      repudiandae impedit praesentium doloremque, inventore eos animi non nobis
+      ad vel repellendus cupiditate!
+    </p>
+  </body>
+</html>
