@@ -66,6 +66,40 @@
     line-height: 40px;
     border-radius: 5px;
     margin-bottom: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.form .phone .select {
+    position: absolute;
+    top: 39px;
+    /* margin-top: 10px; */
+    width: 142px;
+    height: 300px;
+    overflow-y: auto;
+    z-index: 1;
+    /* padding: 10px; */
+    background-color: rgba(255, 255, 255, .9);
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    display: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form .phone .select li {
+    padding: 10px;
+    height: 40px;
+}
+
+.form .phone .select li.active {
+    color: #00a1d6;
+    font-weight: bold;
+    background-color: #f7f6fb;
+}
+
+.form .phone:hover .select {
+    display: block;
 }
 
 .form .phone .country {
