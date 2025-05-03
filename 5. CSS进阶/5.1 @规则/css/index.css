@@ -1,0 +1,16 @@
+/* 2. charset
+  - @charset "utf-8";（跟html<meta charset="UTF-8">一样）
+  - 告诉浏览器该CSS文件，使用的字符编码集是utf-8，必须写到第一行
+*/
+@charset 'utf-8';
+
+/* 1. import
+  - @import "路径";
+  - 导入另外一个css文件
+*/
+@import "./reset.css";
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
