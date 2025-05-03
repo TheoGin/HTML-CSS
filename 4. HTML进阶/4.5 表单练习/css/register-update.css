@@ -25,7 +25,7 @@ body {
     border-bottom: 1px solid #ddd;
     /* 高度用来控制边框的位置，而文字会撑开，文字不影响 */
     height: 30px;
-    /* 然后放在下面内容挤上来，加个 */
+    /* 然后防止下面内容挤上来，加个 */
     margin-bottom: 60px;
 }
 
