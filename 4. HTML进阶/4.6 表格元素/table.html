@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        width: 100%;
+        /* -----给table元素设置border-collapse边框坍塌----- */
+        /* 默认值 */
+        border-collapse: separate;
+        /* 边框合并 */
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        border: 1px solid #999;
+        padding: 20px 0;
+      }
+
+      /* th默认居中 */
+      td {
+        text-align: center;
+      }
+
+      table caption {
+        font-size: 2em;
+        font-weight: bold;
+        margin: 1em 0;
+      }
+
+      thead tr {
+        background-color: #008c8c;
+        color: #fff;
+      }
+
+      /* 隔行变色 */
+      tbody tr:nth-child(even) {
+        background-color: #eee;
+      }
+
+      table tr:hover {
+        background-color: #ccc;
+      }
+
+      tbody tr td:first-child {
+        color: chocolate;
+      }
+
+      tfoot td {
+        text-align: right;
+        padding-right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        这是表格标题
+      </caption>
+      <thead>
+        <tr>
+          <th>列1</th>
+          <th>列2</th>
+          <th>列3</th>
+          <th>列4</th>
+          <th>列5</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>数据1</td>
+          <!-- 行row：单元格合并。span 跨度 -->
+          <td rowspan="2">数据2</td>
+          <td>数据3</td>
+          <td>数据4</td>
+          <td>数据5</td>
+        </tr>
+        <tr>
+          <td>数据1</td>
+          <!-- <td>数据2</td> -->
+          <td>数据3</td>
+          <td>数据4</td>
+          <td>数据5</td>
+        </tr>
+        <tr>
+          <td>数据1</td>
+          <td>数据2</td>
+          <td>数据3</td>
+          <td>数据4</td>
+          <td>数据5</td>
+        </tr>
+        <tr>
+          <td>数据1</td>
+          <td>数据2</td>
+          <td>数据3</td>
+          <td>数据4</td>
+          <td>数据5</td>
+        </tr>
+        <tr>
+          <td>数据1</td>
+          <td>数据2</td>
+          <td>数据3</td>
+          <td>数据4</td>
+          <td>数据5</td>
+        </tr>
+        <tr>
+          <td>数据1</td>
+          <td>数据2</td>
+          <td>数据3</td>
+          <td>数据4</td>
+          <td>数据5</td>
+        </tr>
+        <tr>
+          <td>数据1</td>
+          <td>数据2</td>
+          <td>数据3</td>
+          <td>数据4</td>
+          <td>数据5</td>
+        </tr>
+        <tr>
+          <td>数据1</td>
+          <td>数据2</td>
+          <td>数据3</td>
+          <td>数据4</td>
+          <td>数据5</td>
+        </tr>
+        <tr>
+          <td>数据1</td>
+          <td>数据2</td>
+          <td>数据3</td>
+          <td>数据4</td>
+          <td>数据5</td>
+        </tr>
+        <tr>
+          <td>数据1</td>
+          <td>数据2</td>
+          <td>数据3</td>
+          <td>数据4</td>
+          <td>数据5</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <!-- <td></td>
+                <td></td>
+                <td></td>
+                <td></td> -->
+          <!-- 列col：单元格合并。span 跨度 -->
+          <td colspan="5">共计：99999.99</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
