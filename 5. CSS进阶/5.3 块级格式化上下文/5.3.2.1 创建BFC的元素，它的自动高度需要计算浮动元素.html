@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: lightblue;
+      }
+
+      /* 1. 伪元素清除浮动（推荐用） */
+      /* .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        } */
+
+      /* 2. 创建BFC元素来清除浮动 */
+      .clearfix {
+        /* 也可以不加类名，直接写到 .container 选择器  */
+        /* position: absolute | fixed（非static | relative）会创建BFC元素（有副作用，不推荐用） */
+        /* position: static;  */
+
+        /* float: left | right（非none）会创建BFC元素（有副作用，不推荐用） */
+        /* float: left; */
+
+        /* overflow: scroll | auto | hidden（非visible）会创建BFC元素（hidden副作用最小，但还是有副作用，因为有时候有些元素是要溢出显示的） */
+        overflow: hidden;
+      }
+
+      .item {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        margin: 20px;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container clearfix">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+  </body>
+</html>

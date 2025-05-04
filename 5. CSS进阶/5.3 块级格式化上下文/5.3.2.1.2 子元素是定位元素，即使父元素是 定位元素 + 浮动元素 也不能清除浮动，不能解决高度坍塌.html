@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        /* 子元素是浮动元素，父元素通过float: left创建bfc元素，也可以清除浮动，解决高度坍塌 */
+        float: left;
+        background-color: #008c8c;
+
+        /* 子元素是定位元素，即使父元素是 定位元素 + 浮动元素 也不能清除浮动，不能解决高度坍塌 */
+        position: relative;
+      }
+
+      .item {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        margin: 20px;
+        /* 子元素是浮动元素，父元素通过float: left创建bfc元素，也可以清除浮动，解决高度坍塌 */
+        /* float: left; */
+
+        /* 子元素是定位元素，即使父元素通过float: left创建bfc元素，也不能清除浮动，不能解决高度坍塌 */
+        position: absolute;
+        left: 0;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item"></div>
+    </div>
+  </body>
+</html>
