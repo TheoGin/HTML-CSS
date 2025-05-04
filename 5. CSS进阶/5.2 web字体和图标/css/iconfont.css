@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4912046 */
+  /* 字体文件可以移到font文件夹，但是记得要改路径！！！路径默认是在当前文件夹下 */
+  src: url('../font/iconfont.woff2?t=1746326086895') format('woff2'),
+       url('../font/iconfont.woff?t=1746326086895') format('woff'),
+       url('../font/iconfont.ttf?t=1746326086895') format('truetype');
+}
+
+/* 类名和样式可以改 */
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-jiantou:before {
+  content: "\e623";
+}
+
+.icon-yonghu:before {
+  content: "\e60a";
+}
+
+.icon-zhuxiao:before {
+  content: "\e673";
+}
+
