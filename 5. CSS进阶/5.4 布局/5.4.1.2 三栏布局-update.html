@@ -13,9 +13,12 @@
       }
 
       .container {
-        width: 90%;
-        margin: 0 auto;
-        background-color: lightblue;
+        padding: 20px;
+        /* 测试用边框，更明显可以看出高度会不会坍塌 */
+        border: 3px solid;
+
+        /* 如果main区域要定宽，可以给 main区域定宽 | container设置最小宽度 */
+        min-width: 1024px;
       }
 
       .container .left {
@@ -33,8 +36,11 @@
       }
 
       .container .main {
+        /* 测试用边框，更明显可以看出会不会与浮动元素重叠 */
+        border: 3px solid;
+
+        /* 创建BFC的元素，它的边框盒不会与浮动元素重叠 */
         overflow: hidden;
-        background-color: coral;
       }
     </style>
   </head>
