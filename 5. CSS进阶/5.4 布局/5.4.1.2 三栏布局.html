@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+        /* 有浮动要解决高度坍塌！！！ */
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+
       .container {
         width: 90%;
         margin: 0 auto;
@@ -32,7 +40,7 @@
     </style>
   </head>
   <body>
-    <div class="container">
+    <div class="container clearfix">
       <aside class="left">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
         doloribus molestias, magnam inventore suscipit iste eum velit?
