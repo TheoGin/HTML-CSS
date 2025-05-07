@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        /* 子元素会直接继承 */
+        line-height: 30px;
+
+        /* 先计算，再继承：
+         1. div没有设置字体大小，会继承父元素body
+         2. body没有设置字体大小，会继承父元素html
+         3. html没有设置字体大小，会用浏览器基准字号——》16px
+         2em是相对字体大小，2 * 16px = 32px，即2em是字体大小的两倍
+        */
+        line-height: 2em;
+        line-height: 200%;
+
+        /* 先继承，再计算 */
+        line-height: 2;
+      }
+
+      .p1 {
+        /* 先继承，再计算：
+         1. 先继承父元素行高 line-height: 2;
+         2. 再根据当前字体大小计算：2 * 40px = 80px
+        */
+        font-size: 40px;
+      }
+
+      .p2 {
+        /* 先继承，再计算：
+         1. 先继承父元素行高 line-height: 2;
+         2. 再根据当前字体大小计算：2 * 12px = 24px
+        */
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p class="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+        minima molestiae labore eaque explicabo enim maxime ipsum, quod
+        inventore modi, velit eligendi perferendis voluptates id dolorum cum
+        doloremque. Repellendus, modi?
+      </p>
+      <p class="p2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint provident
+        ipsa recusandae accusamus dolorem, molestiae nesciunt esse fugiat ipsam
+        natus totam, quis iusto tenetur odio atque harum, dolores vitae
+        voluptate?
+      </p>
+    </div>
+  </body>
+</html>
