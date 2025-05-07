@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 有浮动要解决高度坍塌！！！ */
+        .clearfix::after {
+          content: "";
+          display: block;
+          clear: both;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+
+            /* 4. left区域超出的高度隐藏即可 */
+            overflow: hidden;
+        }
+
+        .left {
+            float: left;
+            width: 300px;
+            background-color: aquamarine;
+            margin-right: 30px;
+
+            /* 1. 伪等高写法。缺点：主区域高度超过10000px时，就不等高，可以再设置大一些 */
+            height: 10000px;
+            /* 2. 清除浮动会在10000px处，用margin-bottom设置负数 */
+            margin-bottom: -9990px;
+            /* 3. 此时的高度：10000px - 9990px = 10px，浮动元素清除就会在main区域高度底部 */
+        }
+
+        .main {
+            padding: 20px;
+            overflow: hidden;
+            background-color: coral;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container clearfix">
+        <aside class="left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident id fugit, itaque quasi, delectus iusto impedit eos odio quis aut architecto. Ad nihil iusto quisquam dolores excepturi, magni tenetur reprehenderit.
+        </aside>
+
+        <main class="main">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat necessitatibus impedit enim quam accusamus assumenda explicabo fugit, blanditiis incidunt in, totam, reiciendis expedita dolorum ut optio doloribus dolor. Facilis possimus sint ab consequatur qui eos tenetur quisquam, deserunt in totam ex esse similique asperiores ea atque labore est aliquam, velit porro officiis accusamus soluta enim quod. Quos architecto modi laboriosam dolorum esse doloremque aliquam soluta aliquid iure magnam. Perferendis ipsum quam exercitationem cum provident consectetur ab quia cupiditate neque maiores adipisci totam, accusantium eius modi sunt tempora dignissimos dolor odit facilis unde! Sunt voluptatum eius, natus nemo dolor nobis nisi sint? Perferendis praesentium ex perspiciatis sed obcaecati, porro placeat. Voluptatem distinctio, harum porro perferendis hic autem fugiat expedita totam placeat asperiores iure delectus est fugit architecto earum enim repudiandae rem. Sint atque perspiciatis excepturi officiis laboriosam porro, impedit doloribus recusandae dolore ea rerum, quia minima voluptatum eos illum quasi! Blanditiis nihil adipisci numquam error earum sit ea laborum sed fugiat voluptatum doloribus accusantium quas voluptatem, placeat ut nam, ratione et explicabo perferendis autem. Voluptatibus, quidem. Quam, est et? Ea quae, ullam porro delectus atque reiciendis maxime sed earum corrupti quidem eaque dolorem sit quos? Recusandae repellat odit, itaque sint voluptatibus sit dolor corrupti dolorem! Possimus aut consectetur delectus repellat. Velit nulla perferendis qui asperiores enim nostrum voluptas cumque possimus explicabo delectus nam sit quia repellendus totam voluptatem, eligendi animi. Voluptates voluptate sint, ratione facere dicta doloribus molestias obcaecati ipsam accusamus, ipsum, quisquam quibusdam vel veritatis! Nobis quae exercitationem quaerat consequuntur quos, incidunt tempora asperiores quisquam adipisci nemo facere dignissimos repudiandae alias enim dolorum inventore iste laudantium. Ipsum, quidem dicta quis unde corrupti voluptatem consequatur, vero culpa eligendi voluptates, blanditiis asperiores laboriosam nesciunt molestias suscipit amet vitae sunt facere illo harum! Ab, architecto magni eum illum autem perferendis est. Blanditiis, perspiciatis?
+        </main>
+    </div>
+</body>
+</html>

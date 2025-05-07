@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      .container {
+        border: 3px solid;
+        min-width: 1024px;
+
+        /* 伪等高：侧边栏超出区域隐藏 */
+        overflow: hidden;
+      }
+
+      .container .left {
+        float: left;
+        background-color: lightgreen;
+        width: 300px;
+        margin-right: 20px;
+
+        /* 伪等高 */
+        height: 10000px;
+        margin-bottom: -9990px;
+      }
+
+      .container .right {
+        float: right;
+        background-color: lightseagreen;
+        width: 300px;
+        margin-left: 20px;
+
+        /* 伪等高 */
+        height: 10000px;
+        margin-bottom: -9990px;
+      }
+
+      .container .main {
+        border: 3px solid;
+
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container clearfix">
+      <aside class="left">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, nobis, culpa non eos a laboriosam itaque ab ut ipsam, velit est recusandae repudiandae tempora voluptatum iure earum. Illum, aliquam at?
+      </aside>
+
+      <aside class="right">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo neque voluptates impedit, minus ducimus, ex itaque illo amet consequuntur consectetur, voluptatem adipisci voluptatum blanditiis porro eveniet? Soluta laudantium quae saepe.
+      </aside>
+
+      <main class="main">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam fugiat natus id suscipit? Ullam quo voluptate dolores aliquid cumque delectus, et error unde aut, adipisci nemo numquam quasi minus incidunt? Voluptatibus aut in sunt dolorum impedit ex facilis incidunt inventore molestiae illum iste consequatur porro ipsum eligendi perferendis, ducimus laborum totam rem corporis earum. Provident ipsa incidunt, quos, libero eligendi sequi placeat laborum dolorem iure exercitationem nemo iste aliquam voluptas similique rerum quisquam eum voluptates reprehenderit laudantium ea quasi. Placeat deserunt reprehenderit fugit, veniam optio neque harum eligendi nesciunt libero eius tenetur suscipit iure nihil autem nulla a! Mollitia labore corporis beatae at qui voluptate repellendus ducimus ratione iste accusantium, impedit alias, dolorem ab voluptates laboriosam debitis ea amet iure tempore dolorum! Exercitationem iste recusandae tempora quis dolore. Libero, eaque earum architecto quam non consequatur eum unde provident voluptatem dolore natus sunt mollitia voluptate nisi, delectus deleniti quas repudiandae? Accusamus, nobis fugiat excepturi dolorum sed molestias esse ut blanditiis perspiciatis ad nulla repellat quas beatae cumque quasi, quo exercitationem dicta numquam! Qui nihil, illum, suscipit voluptatum laborum ipsam consequatur animi nulla voluptates omnis expedita temporibus rerum quam libero atque deserunt architecto. Repellendus error perferendis, adipisci modi omnis ex dolore nemo velit quae rerum doloribus. Non ducimus magnam quod reiciendis iusto libero officia architecto voluptates perferendis natus veritatis voluptas esse eligendi, quis consectetur nesciunt! Aliquid autem praesentium dolorem unde error, perspiciatis accusantium mollitia iusto omnis deleniti dignissimos assumenda ea expedita tenetur consectetur adipisci provident laudantium, nihil eligendi necessitatibus hic harum! Assumenda dicta doloribus error ullam ea quae blanditiis quasi soluta consectetur repudiandae, amet nihil earum, optio numquam quia vel nemo eos? Ducimus autem exercitationem aliquam repellendus fugit sunt distinctio reiciendis debitis quam quod, repellat, consequuntur accusantium earum, facere deserunt quasi aut mollitia explicabo quidem totam quaerat! Debitis sapiente maxime asperiores consequatur.
+      </main>
+    </div>
+  </body>
+</html>
