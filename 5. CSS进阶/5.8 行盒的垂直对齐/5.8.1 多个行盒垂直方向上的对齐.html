@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input[type="checkbox"] {
+        width: 30px;
+        height: 30px;
+
+        /* 给没有对齐元素（行盒或行块盒）设置vertical-align：预设值 */
+        vertical-align: middle;
+      }
+
+      p img {
+        /* 给没有对齐元素（行盒或行块盒）设置vertical-align：数值 | 百分比 */
+        vertical-align: -2px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <input type="checkbox" name="" id=" " />
+      <span>我同意</span>
+    </p>
+    <p>
+      <img src="qq.png" alt="" />
+      <span>请联系我</span>
+    </p>
+  </body>
+</html>
