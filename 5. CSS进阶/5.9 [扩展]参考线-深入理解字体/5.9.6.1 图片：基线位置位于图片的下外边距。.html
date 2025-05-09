@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: red;
+        /* font-size: 0; */
+      }
+
+      .container img {
+        /* 一个元素如果子元素出现行盒，该元素内部也会产生参考线 */
+        /* img的基线和父元素基线对齐，导致出现白边 */
+        display: block; /* 块盒不会产生参考线，就不会让img的基线和父元素基线对齐，就可以解决白边 */
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="qq.png" style="margin: 10px" />
+      请联系我M
+    </div>
+
+    <div class="container">
+      <img src="hashiqi.jpg" />
+    </div>
+  </body>
+</html>
