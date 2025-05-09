@@ -1,0 +1,10 @@
+<svg style="background: #ccc" width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+    <!-- <circle cx="250" cy="250" r="200" fill="none" style="stroke:#000;stroke-width: 1"  /> -->
+
+    <!-- A半径1    半径2     顺时针旋转角度（0表示不旋转）    小弧（0）或大弧（1）   顺时针（1）逆时针（0） -->
+    <!-- <path d="M250 50 A100 100 0 0 1 250 250 A100 100 0 0 0 250 450 A200 200 0 0 1 250 50" fill="#000" style="stroke:red;stroke-width: 1" /> -->
+    <path d="M250 50 A100 100 0 0 1 250 250 A100 100 0 0 0 250 450 A200 200 0 0 1 250 50" fill="#000" />
+    <path d="M250 50 A100 100 0 0 1 250 250 A100 100 0 0 0 250 450 A200 200 0 0 0 250 50" fill="#fff" />
+    <circle cx="250" cy="150" r="30" fill="#fff" />
+    <circle cx="250" cy="350" r="30" fill="#000" />
+</svg>

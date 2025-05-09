@@ -1,0 +1,43 @@
+<svg style="background: #ccc;" width="500" height="800" xmlns="http://www.w3.org/2000/svg">
+    <!-- 属性：
+      - stroke描边
+      - x：x坐标，离左边的距离
+      - y：y坐标，离上边的距离
+     -->
+    <!-- 1. 矩形:rect -->
+    <rect x="100" y="100" width="100" height="100" fill="red" stroke="#000" stroke-width="5" />
+
+    <!-- 2. 圆形：circle
+      - cx: center x，圆点离左边的距离
+      - cy: center y，圆点离上边的距离
+      - r：半径
+     -->
+    <circle cx="200" cy="300" r="50" fill="transparent" stroke="#000" stroke-width="5" />
+
+    <!-- 3. 椭圆：ellipse
+      - rx: 横向半径
+      - ry: 纵向半径
+    -->
+    <ellipse cx="200" cy="400" rx="50" ry="20" fill="red" stroke="#000" stroke-width="5" />
+
+    <!-- 4. 线条：line。两个坐标确定一条直线 -->
+    <line x1="10" y1="10" x2="200" y2="20" stroke="#000" stroke-width="3" />
+
+    <!-- 5. 折线：polyline（首尾两点不闭合）。多个点坐标 -->
+    <polyline points="300,100,350,100,350,150,400,150,400,200" stroke="#000" stroke-width="3" fill="red" />
+
+    <!-- 6. 多边形：polygon（首尾两点闭合） -->
+    <polygon points="300,300,400,400,300,500" fill="none" stroke="#000" stroke-width="3" />
+
+    <!-- 7. 路径：path。
+      - M = moveto
+      - A（A = elliptical Arc）半径1    半径2     顺时针旋转角度（0表示不旋转）    小弧（0）或大弧（1）   顺时针（1）逆时针（0） 结束坐标 
+      -->
+    <path d="M300 300 A150 150 0 0 0 450 150" fill="none" stroke="#000" stroke-width="3" />
+
+    <!-- 
+      - L = lineto
+      - Z = closepath
+     -->
+    <path d="M150 600 L300 600 L300 700 L150 700 Z" fill="red" stroke="#000" stroke-width="3" />
+</svg>
