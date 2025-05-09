@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        background-color: lightblue;
+      }
+
+      .container {
+        width: 200px;
+        height: 200px;
+        background-color: #008c8c;
+        margin: 50px;
+        position: relative;
+        margin-top: -30px;
+      }
+
+      .item {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: absolute;
+        left: -30px;
+        top: -30px;
+        /* 堆叠级别为正值的堆叠上下文 */
+        z-index: 1;
+      }
+
+      .normal {
+        width: 200px;
+        height: 200px;
+        background-color: chocolate;
+        margin-top: -320px;
+      }
+
+      /* 非定位的浮动盒子 */
+      /* .float {
+        width: 200px;
+        height: 200px;
+        background-color: greenyellow;
+        margin-left: 100px;
+        float: left;
+      } */
+    </style>
+  </head>
+  <body>
+    <span style="background-color: antiquewhite">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus excepturi
+      consectetur non, hic corrupti ut atque cum soluta ipsam dicta voluptatum
+      dolor, placeat veniam omnis, ipsum voluptatibus in magni labore!
+    </span>
+    <div class="container">
+      <div class="item"></div>
+    </div>
+    <!-- <div class="float"></div> -->
+    <div class="normal"></div>
+  </body>
+</html>

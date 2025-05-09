@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        background-color: lightblue;
+      }
+
+      .container {
+        width: 200px;
+        height: 200px;
+        background-color: #008c8c;
+        margin: 50px;
+        position: relative;
+
+        /* 默认值，没有创建堆叠上下文 */
+        /* z-index: auto; */
+      }
+
+      .item {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: absolute;
+        left: -30px;
+        top: -30px;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item"></div>
+      <div
+        class="item"
+        style="
+          z-index: -2;
+          width: 100px;
+          height: 100px;
+          background-color: chocolate;
+          top: -45px;
+          left: -45px;
+        "
+      ></div>
+    </div>
+  </body>
+</html>
