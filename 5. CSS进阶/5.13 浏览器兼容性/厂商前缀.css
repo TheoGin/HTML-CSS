@@ -1,0 +1,9 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    padding: 50px;
+    box-sizing: border-box;
+
+    display: flex;
+}

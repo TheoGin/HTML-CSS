@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        background: red;
+        /* *属性，兼容IE5、IE6、IE7 */
+        *background: blue;
+
+        /*  _属性，兼容IE5~IE6 */
+        _background: green;
+
+        /* 属性值\9，兼容IE5~IE11 */
+        background: orange\9;
+
+        /* 属性值\0，兼容IE8~IE11 */
+        background: purple\0;
+
+        /* 属性值\9\0，兼容IE9~IE10 */
+        background: cyan\9\0;
+
+        /* IE5、6、7的外边距bug，浮动元素的左外边距翻倍 */
+        float: left;
+        margin-left: 30px;
+        *margin-left: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

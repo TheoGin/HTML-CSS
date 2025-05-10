@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        border: 2px solid;
+        overflow: auto;
+      }
+
+      /* 去掉div，则整个浏览器的滚动条都会生效 */
+      div::-webkit-scrollbar {
+        width: 10px;
+        /* background-color: red; */
+      }
+
+      /* 可拖拽条 */
+      div::-webkit-scrollbar-thumb {
+        background-color: #008c8c;
+        border-radius: 8px;
+      }
+
+      /* 可拖拽条的轨道 */
+      div::-webkit-scrollbar-track {
+        background-color: #72b6b6;
+      }
+
+      /* 上下按钮 */
+      div::-webkit-scrollbar-button {
+        background-color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
+      sequi, repellendus necessitatibus laudantium quis nesciunt quos nam,
+      temporibus provident alias ratione dolor officia quae! Neque sequi facilis
+      dicta consectetur nulla tempore! Iusto aspernatur libero, assumenda
+      laboriosam facere magnam quae facilis commodi, nisi autem, eum repellendus
+      veritatis quia? Possimus maiores dignissimos saepe, illum tempore unde
+      iusto, tenetur ad nostrum facere quisquam. Ea sed ipsa iure debitis
+      itaque, quam fugiat dolor, a assumenda corporis sunt voluptas labore,
+      commodi fuga officiis reiciendis aperiam ad magni odit possimus doloremque
+      quaerat accusamus quidem. Quas, officia consectetur perferendis officiis
+      recusandae soluta doloremque quos mollitia, sequi nemo eos placeat ut quae
+      explicabo optio delectus error voluptate? Quidem, enim nesciunt quasi amet
+      quod aliquam veritatis aut eveniet. Non vel optio quas tempore sunt enim
+      et molestias pariatur praesentium, laborum, nam recusandae iusto
+      necessitatibus consequatur. Animi reprehenderit qui, minus commodi
+      veritatis sequi nulla dignissimos dicta libero est, error ratione
+      consequuntur asperiores odio excepturi ducimus omnis. Laudantium illo et
+      architecto similique necessitatibus nesciunt soluta. Eveniet minus quidem
+      enim ipsam amet maiores voluptatibus doloremque itaque sint, corrupti rem
+      nam beatae distinctio cum, consequuntur odio natus iure labore tempora
+      inventore officia cupiditate. Ullam cupiditate aspernatur commodi quis cum
+      vero facilis ipsa saepe soluta eveniet nemo deserunt ducimus, maxime
+      doloremque repellat mollitia aut corporis praesentium, accusamus, optio
+      vel accusantium debitis? Reprehenderit a pariatur quasi dolorum
+      perferendis odit voluptas ab aspernatur ut at dolores iure consequatur,
+      laudantium quia. Dolore ducimus magni perferendis laborum inventore odit
+      alias provident officiis neque nam! Totam quo ad, similique reprehenderit
+      delectus maiores debitis explicabo, laboriosam perspiciatis rem nisi a eos
+      rerum amet, consequatur ducimus fuga dignissimos eius ullam at velit et
+      officiis aliquid? Fugiat tempora at id inventore, itaque pariatur dolore
+      dolorem cum culpa aut dignissimos totam, sapiente, maiores harum esse
+      nostrum sunt repellat? Fugiat illum asperiores eveniet at.
+    </div>
+  </body>
+</html>
