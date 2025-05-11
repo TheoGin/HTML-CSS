@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        height: 200px;
+        background-color: lightblue;
+        margin: 30px;
+
+        /* 4. 在其包含块居中 */
+        position: relative;
+      }
+
+      p {
+        /* 1. 定宽 */
+        width: 500px;
+        height: 100px;
+        background-color: red;
+
+        /* 2. 设置左右坐标为0 */
+        position: absolute;
+        left: 0;
+        right: 0;
+
+        /* 3. 设置左右margin为auto */
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p></p>
+    </div>
+  </body>
+</html>
