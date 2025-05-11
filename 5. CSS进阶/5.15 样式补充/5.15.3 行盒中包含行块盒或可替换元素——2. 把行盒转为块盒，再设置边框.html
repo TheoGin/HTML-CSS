@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        /* 2. 把行盒转为块盒，再设置边框 */
+        display: block;
+        border: 2px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 行盒的高度与它内部的行块盒或可替换元素的高度无关，它的高度由字体大小决定 -->
+    <span>
+      <img src="1.jpg" alt="" />
+    </span>
+  </body>
+</html>

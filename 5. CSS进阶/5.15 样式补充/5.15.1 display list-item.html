@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        display: list-item;
+        background-color: lightblue;
+        margin: 100px;
+
+        /* 1. list-style-type：设置次盒子中内容的类型 */
+        list-style-type: circle;
+
+        /* 2. list-style-position：设置次盒子相对于主盒子的位置。属性值：
+                   - outside：次盒子在主盒子外面。默认值。
+                   - inside：次盒子在主盒子里面。
+            */
+        list-style-position: inside;
+
+        /* 3. 速写属性list-style，如上面两行缩写 */
+        list-style: circle inside;
+      }
+
+      ul {
+        /* 利用list-style属性可以继承来 清空次盒子 */
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div>Lorem ipsum dolor sit amet.</div>
+    ul列表：
+    <ul>
+      <li>Lorem.</li>
+      <li>Dolorem?</li>
+      <li>Accusamus!</li>
+      <li>Perferendis.</li>
+      <li>Expedita?</li>
+    </ul>
+  </body>
+</html>

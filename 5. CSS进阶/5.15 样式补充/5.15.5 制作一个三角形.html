@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        /* 1. 宽度为0 */
+        width: 0;
+
+        /* 2. 高度为0 */
+        height: 0;
+
+        border-width: 10px;
+        border-style: solid;
+        border-color: red blue green orange;
+        /* 3. 留下一种边框颜色就可作出三角形 */
+        border-color: transparent transparent transparent orange;
+
+        /* 上面简写 */
+        border: 10px solid transparent;
+        border-left-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 利用元素 制作一个三角形 -->
+    <div></div>
+  </body>
+</html>

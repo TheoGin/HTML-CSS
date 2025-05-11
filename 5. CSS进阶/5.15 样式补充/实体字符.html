@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p::after {
+        /* 实体两个字的UTF-8编码
+            字——————&#x5B57;
+            符——————&#x7B26; */
+        /* content: "&#x5B57;&#x7B26;";  */ /* 不能这样子写 */
+
+        content: "\5B57\7B26";
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <!-- 实体两个字的UTF-8编码
+         实——————&#x5B9E;
+         体——————&#x4F53;
+        -->
+      &#x5B9E;&#x4F53;
+    </p>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        width: 300px;
+        /* height: 200px; */
+        border: 2px solid;
+
+        /* justify：除最后一行外，分散对齐 */
+        text-align: justify;
+      }
+
+      /* 通过伪元素让 最后一行分散对齐 */
+      p::after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      dignissimos officia nihil exercitationem vitae velit eligendi voluptatum
+      consequuntur ullam reiciendis vero hic, maxime cupiditate ut voluptates
+      quaerat nostrum repellendus!
+    </p>
+  </body>
+</html>
