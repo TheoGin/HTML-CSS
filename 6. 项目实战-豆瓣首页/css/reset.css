@@ -140,6 +140,10 @@ button {
   border: none;
 }
 
+button {
+  background-color: transparent;
+}
+
 input:focus,
 select:focus,
 textarea:focus,
