@@ -1,0 +1,305 @@
+@import "./reset.css";
+@import "./common.css";
+@import "./loginFrame.css";
+
+body {
+  font-size: 13px;
+  font-family: Helvetica, Arial, Hiragino Sans GB, Microsoft YaHei,
+    WenQuanYi Micro Hei, sans-serif;
+  line-height: 1.618;
+  /* font: normal 13px / 1.618 Helvetica, Arial, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif; */
+}
+
+/* 通用样式开始 */
+
+.hidden {
+  display: none;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+a {
+  color: #41ac52;
+}
+
+.btn {
+  background-color: rgba(66, 189, 86, 0.5);
+  border-radius: 3px;
+}
+
+.tx-right {
+  text-align: right;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+/* 通用样式结束 */
+
+.container {
+  width: 300px;
+  height: 300px;
+  padding: 30px 10px 10px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* 右上角登录方式切换 */
+.login-switch .login-switch-icon .icon-switch {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: no-repeat left top/100%;
+}
+
+.login-switch .login-switch-icon .code-login {
+  background-image: url("../img/icon-pc.png");
+}
+
+.login-switch .login-switch-icon .code-login::before {
+  content: "短信登录/注册";
+  width: 86px;
+}
+
+.login-switch .login-switch-icon .code-login:hover::before {
+  display: block;
+}
+
+.login-switch .login-switch-icon .qrcode {
+  background-image: url("../img/icon-qrcode.png");
+}
+
+.login-switch .login-switch-icon .qrcode::before {
+  content: "扫码登录";
+  width: 53px;
+}
+
+.login-switch .login-switch-icon .qrcode:hover::before {
+  display: block;
+}
+
+.login-switch .login-switch-icon .icon-switch::before {
+  position: absolute;
+  right: 50px;
+  top: 0;
+  color: #666;
+  font-size: 13px;
+  background: #f5faf9;
+  border: 1px solid rgba(66, 189, 86, 0.3);
+  padding: 3px 5px;
+  border-radius: 3px;
+  display: none;
+}
+
+.login-switch .login-switch-icon .icon-switch:hover::after {
+  content: "";
+  position: absolute;
+  right: 44px;
+  top: 8px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid rgba(66, 189, 86, 0.3);
+  border-bottom: none;
+  border-left: none;
+  transform: rotate(45deg);
+  background: #f5faf9;
+  /* z-index: 0; */
+}
+
+/* 右上角登录方式切换结束 */
+
+/* tab栏切换 */
+.tabs {
+  border-bottom: 1px solid #ececec;
+  font-size: 12px;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.tabs .code-login-tab .qrcode-login,
+.tabs .code-login-tab .pwd-login {
+  width: 138px;
+  height: 24px;
+  display: inline-block;
+  text-align: center;
+  line-height: 24px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.tabs .code-login-tab .selected {
+  border-bottom: 1px solid #494949;
+  box-sizing: border-box;
+}
+
+/* tab栏切换结束 */
+
+/* 二维码区域 */
+
+.qrcode-area {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.qrcode-area .qrcode img {
+  width: 170px;
+  height: 170px;
+}
+
+.qrcode-area .tip span {
+  background-color: #ebebeb;
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+}
+
+/* 二维码区域结束 */
+
+/* 密码或验证码登录区域 */
+
+.code-login-area .readme {
+  color: #9b9b9b;
+  margin: 10px 0;
+  font-size: 12px;
+}
+
+.code-login-area .form-item {
+  margin: 10px 0;
+  position: relative;
+}
+
+.code-login-area .form-item input {
+  border: 1px solid #e4e6e5;
+  width: 280px;
+  height: 30px;
+  box-sizing: border-box;
+}
+
+.code-login-area .form-item .phone input {
+  padding: 8px 40px 8px 60px;
+}
+
+.code-login-area .form-item .city .phone-start {
+  font-size: 15px;
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  width: 40px;
+}
+
+.code-login-area .form-item .city .phone-start::after {
+  content: "";
+  display: block;
+  height: 22px;
+  width: 0;
+  border-right: 1px solid #dfdfdf;
+  position: absolute;
+  left: 40px;
+  top: 0px;
+}
+
+/* 弹出框 */
+.code-login-area .form-item .city .country-popup {
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  background-color: #fff;
+  left: 0;
+  /* left: 5px; */
+  top: 0;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.code-login-area .form-item .city .country-popup .wrapper {
+  width: 270px;
+  height: 260px;
+  border: 1px solid #aaa;
+  margin: 10px auto;
+  border-radius: 3px;
+  position: relative;
+}
+
+.code-login-area .form-item .city .country-popup .country {
+  width: 269px;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 8px;
+  position: relative;
+  border-bottom: 1px solid transparent;
+  background: url("../img/border-bottom.svg") no-repeat 0px 39px/100%;
+  background-color: #ebf5eb;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.code-login-area .form-item .city .country-popup .country .title {
+  color: #060;
+  font-size: 16px;
+}
+
+.code-login-area .form-item .city .country-popup .country .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 21px;
+  color: #999;
+  padding: 8px 10px;
+}
+
+.code-login-area .form-item .city .country-popup .country-list {
+    padding: 36px 0 20px 15px;
+}
+
+.code-login-area .form-item .city .country-popup .country-list ul {
+    margin-top: 10px;
+    height: 180px;
+    overflow: auto;
+    padding-right: 10px;
+}
+
+.code-login-area .form-item .city .country-popup .country-list ul li {
+    border-top: 1px solid #e5e5e5;
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+    color: #494949;
+}
+
+.code-login-area .form-item .city .country-popup .country-list ul li.active {
+    color: #41ac52;
+}
+
+.code-login-area .form-item .city .country-popup .country-list ul li.active .title::after {
+    content: "✔︎";
+    margin-left: 10px;
+}
+
+.code-login-area .form-item .sncode input {
+  padding: 8px 10px;
+}
+
+.code-login-area .form-item .sncode-btn {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.code-login-area .form-item .login-btn {
+  width: 100%;
+  color: #fff;
+  height: 34px;
+}
+
+.code-login-area .pwd-login .form-item .phone input {
+  padding: 8px 10px;
+}
+
+/* 密码或验证码登录区域结束 */

@@ -13,23 +13,10 @@ button {
 
 /* 首页通用样式开始 */
 
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
-}
 
 .container {
   width: 950px;
   margin: 0 auto;
-}
-
-.f-left {
-  float: left;
-}
-
-.f-right {
-  float: right;
 }
 
 /* 首页通用样式结束 */
