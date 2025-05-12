@@ -9,40 +9,45 @@
   </head>
   <body>
     <!-- 头部区域 -->
-     <header class="header clearfix">
-      <div class="left">
+    <header class="header">
+      <div class="container clearfix">
         <!-- logo -->
-         <div class="logo">
-          <a href="">
-            <h1>
-              豆瓣
-            </h1>
-          </a>
-         </div>
-         <!-- search -->
-          <div class="search">
-            <form action="">
-              <span>
-                <input type="text" placeholder="书籍、电影、音乐、小组、小站、成员" max-length="60">
-              </span>
-              <button class="sc-bn">
-                <i class="iconfont icon-sousuo"></i>
-              </bu>
-            </form>
-          </div>
-      </div>
-      <div class="right">
-        <nav class="nav">
-          <a href="" target="_blank">豆瓣读书</a>
-          <a href="" target="_blank">豆瓣电影</a>
-          <a href="" target="_blank">豆瓣音乐</a>
-          <a href="" target="_blank">豆瓣小组</a>
-          <a href="" target="_blank">豆瓣FM</a>
-          <a href="" target="_blank">豆瓣同城</a>
-          <a href="" target="_blank">豆瓣东西</a>
-          <a href="" target="_blank">豆瓣豆品</a>
+        <div class="logo f-left">
+          <!-- <a href="">
+            <h1>豆瓣</h1>
+          </a> -->
+          <!-- <h1>
+            <a href="">
+              <span>豆瓣</span>
+            </a>
+          </h1> -->
+          <h1>
+            <a href=""> 豆瓣 </a>
+          </h1>
+        </div>
+        <!-- search -->
+        <div class="search f-left">
+          <!-- 加上form元素，表单回车的时候进行搜索 -->
+          <form>
+            <input type="text" placeholder="电影、书籍、音乐" max-length="60" />
+            <button class="sc-bn">
+              <i class="iconfont icon-sousuo"></i>
+            </button>
+          </form>
+        </div>
+        <!-- 一般有子菜单就会用ul、li -->
+        <nav class="menu f-right clearfix">
+          <!-- menu-加前缀，避免和其他样式冲突 -->
+          <a href="" class="menu-read" target="_blank">豆瓣读书</a>
+          <a href="" class="menu-moive" target="_blank">豆瓣电影</a>
+          <a href="" class="menu-music" target="_blank">豆瓣音乐</a>
+          <a href="" class="menu-group" target="_blank">豆瓣小组</a>
+          <a href="" class="menu-fm" target="_blank">豆瓣FM</a>
+          <a href="" class="menu-city" target="_blank">豆瓣同城</a>
+          <a href="" class="menu-thing" target="_blank">豆瓣东西</a>
+          <a href="" class="menu-doupin" target="_blank">豆瓣豆品</a>
         </nav>
       </div>
-     </header>
+    </header>
   </body>
 </html>

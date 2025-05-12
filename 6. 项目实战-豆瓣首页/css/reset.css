@@ -138,10 +138,15 @@ select,
 textarea,
 button {
   border: none;
+  outline: none;
+  outline-offset: 0;
 }
 
 button {
-  background-color: transparent;
+  /* background-color: transparent; */
+  background-color: initial; /* initial初始值就是 transparent */
+  /* 清除默认内边距 */
+  padding: 0;
 }
 
 input:focus,

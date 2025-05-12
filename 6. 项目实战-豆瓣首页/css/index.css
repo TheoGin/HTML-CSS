@@ -3,113 +3,192 @@
 /* 引入字体图标在线测试地址代码的样式 */
 @import "//at.alicdn.com/t/c/font_4917597_i5lmmpdalcs.css";
 
+/* 首页统一样式开始 */
 
-/* 头部区域 */
+button {
+  cursor: pointer;
+}
+
+/* 首页统一样式结束 */
+
+/* 首页通用样式开始 */
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container {
+  width: 950px;
+  margin: 0 auto;
+}
+
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+/* 首页通用样式结束 */
+
+/* 头部区域开始 */
 .header {
-    width: 1080px;
-    height: 90px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding-top: 30px;
+  height: 90px;
+  padding-top: 30px;
+  /* .header 没设置上外边距，默认为0（0px和30px取最大值就是30px） */
+
+  box-sizing: border-box;
 }
 
-.header .left {
-    float: left;
+.header .container {
+  /* 会出现外边距合并问题，没有给.header 设置上外边距，但.header 确有上外边距 */
+  /* .header 没设置上外边距，默认为0（0px和30px取最大值就是30px） */
+  /* margin-top: 30px; */
 }
 
-.header .left .logo {
-    float: left;
+.header .logo a {
+  display: block;
+  width: 154px;
+  /* height: 30px; */
+  /* 淘宝做法： */
+  /* 1. 高度为0（背景图填充的是边框盒，所以高度为0，不影响背景图的填充） */
+  height: 0;
+  /* 2. 用padding-top把文字挤下去 */
+  padding-top: 30px;
+  /* 3. 用overflow把溢出的文字隐藏 */
+  overflow: hidden;
+
+  background: url("../img/logo_db.png") no-repeat left top/100%;
 }
 
-.header .left .logo a {
-    display: inline-block;
-    width: 154px;
-    height: 30px;
-    background: url("../img/logo_db.png") no-repeat left top/100%;
-    margin-right: 24px;
+/* .header .logo a h1 {
+  display: none;
+} */
+
+/* .header .logo a span {
+  display: none;
+} */
+
+.header .search {
+  width: 270px;
+  height: 30px;
+
+  /* 普适性做法，搜索框的边框加在div上 */
+  border: 1px solid #c3c3c3;
+
+  margin-left: 20px;
+
+  position: relative;
 }
 
-.header .left .logo h1 {
-    display: none;
+.header .search input {
+  padding: 5px;
+  /* 文本框的文字默认为13.333333333px */
+  font-size: 13px;
+
+  width: 240px;
+  height: 20px;
 }
 
-.header .left .search {
-    float: left;
+.header .search input::placeholder {
+  color: #ccc;
 }
 
-.header .left .search form {
-    width: 270px;
-    height: 30px;
-    position: relative;
+.header .search .sc-bn {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #c3c3c3;
 }
 
-.header .left .search form input {
-    padding: 5px;
-    font-size: 13px;
-
-    width: 100%;
-    height: 30px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+.header .menu {
+  margin-top: 6px;
 }
 
-.header .left .search form input::placeholder {
-    color: #ccc;
+.header .menu a {
+  float: left;
+  width: 40px;
+  height: 20px;
+  margin-left: 20px;
+  font-size: 0;
+  /* 模糊？用二倍图，但是变大了，尺寸要调为一倍图的尺寸463px 20px */
+  background: url("../img/anony_nav_logo@2x.png") no-repeat left top/463px 20px;
+  
+  /* -webkit-image-set谷歌浏览器才有效 */
+  /* background-image: -webkit-image-set(
+    url("../img/anony_menu_logo.png") 1x,
+    url("../img/anony_menu_logo@2x.png") 2x
+  ); 
+  background-repeat: no-repeat; */
 }
 
-.header .left .search form .sc-bn {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    text-align: center;
-    line-height: 30px;
-    cursor: pointer;
+/* .header .menu a:nth-child(2) {
+  background-position: -60px 0px;
 }
 
-.header .left .search form .sc-bn .iconfont {
-    color: #ccc;
+.header .menu a:nth-child(3) {
+  background-position: -120px 0px;
 }
 
-.header .right {
-    float: right;
-    line-height: 40px;
+.header .menu a:nth-child(4) {
+  background-position: -180px 0px;
 }
 
-.header .right .nav a {
-    display: inline-block;
-    width: 40px;
-    height: 20px;
-    margin-right: 14px;
-    font-size: 0;
-    background: url("../img/anony_nav_logo.png") no-repeat;
+.header .menu a:nth-child(5) {
+  background-position: -240px 0px;
 }
 
-.header .right .nav a:nth-child(2) {
-    background-position: -60px 0px
-} 
+.header .menu a:nth-child(6) {
+  background-position: -300px 0px;
+}
 
-.header .right .nav a:nth-child(3) {
-    background-position: -120px 0px
-} 
+.header .menu a:nth-child(7) {
+  background-position: -360px 0px;
+}
 
-.header .right .nav a:nth-child(4) {
-    background-position: -180px 0px
-} 
+.header .menu a:nth-child(8) {
+  background-position: -423px 0px;
+} */
 
-.header .right .nav a:nth-child(5) {
-    background-position: -240px 0px
-} 
+/* 上面可读性不好 */
 
-.header .right .nav a:nth-child(6) {
-    background-position: -300px 0px
-} 
+.header .menu .menu-read {
+  background-position: 0px 0px;
+}
 
-.header .right .nav a:nth-child(7) {
-    background-position: -360px 0px
-} 
+.header .menu .menu-moive {
+  background-position: -60px 0px;
+}
 
-.header .right .nav a:nth-child(8) {
-    background-position: -423px 0px;
-} 
+.header .menu .menu-music {
+  background-position: -120px 0px;
+}
+
+.header .menu .menu-group {
+  background-position: -180px 0px;
+}
+
+.header .menu .menu-fm {
+  background-position: -240px 0px;
+}
+
+.header .menu .menu-city {
+  background-position: -300px 0px;
+}
+
+.header .menu .menu-thing {
+  background-position: -360px 0px;
+}
+
+.header .menu .menu-doupin {
+  background-position: -420px 0px;
+  /* 宽度比较宽，单独设置 */
+  width: 44px;
+}
+
+/* 头部区域结束 */
