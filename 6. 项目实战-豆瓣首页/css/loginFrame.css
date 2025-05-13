@@ -51,15 +51,15 @@ a {
   text-align: center;
   line-height: 24px;
   cursor: pointer;
-
-  /* 解决有两个边框的问题，不能设置高度 */
-  margin-bottom: -1px;
 }
 
 .switch-menu .code-login-tab .selected {
   border-bottom: 1px solid #494949;
   font-weight: bold;
   color: #333;
+
+  /* 解决有两个边框的问题，不能设置高度 */
+  margin-bottom: -1px;
 }
 
 /* tab栏切换结束 */
@@ -112,7 +112,7 @@ a {
   font-size: 15px;
   position: absolute;
   left: 10px;
-  top: 5px;
+  top: 9px;
   width: 40px;
   color: #333;
 }
