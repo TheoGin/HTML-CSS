@@ -11,7 +11,6 @@ button {
 
 /* 首页通用样式开始 */
 
-
 .container {
   width: 950px;
   margin: 0 auto;
@@ -103,7 +102,7 @@ button {
   font-size: 0;
   /* 模糊？用二倍图，但是变大了，尺寸要调为一倍图的尺寸463px 20px */
   background: url("../img/anony_nav_logo@2x.png") no-repeat left top/463px 20px;
-  
+
   /* -webkit-image-set谷歌浏览器才有效 */
   /* background-image: -webkit-image-set(
     url("../img/anony_menu_logo.png") 1x,
@@ -178,7 +177,6 @@ button {
 
 /* 头部区域结束 */
 
-
 /* 横幅区域 */
 .banner {
   width: 100%;
@@ -222,15 +220,17 @@ button {
   position: relative;
 }
 
-.banner .app .app-qrcode img {
+.banner .app .app-qrcode .icon-qrcode {
   width: 28px;
   height: 28px;
+  border: 1px solid #48aa0d;
+  border-radius: 2px;
 }
 
 .banner .app .app-qrcode .app-qrcode-expand {
   position: absolute;
-  top: 3px;
-  left: 0;
+  top: -1px;
+  left: -1px;
   width: 200px;
   height: 235px;
   background-color: #fff;
@@ -249,7 +249,7 @@ button {
   margin-top: 10px;
 }
 
-.banner .app .app-qrcode:hover  .app-qrcode-expand {
+.banner .app .app-qrcode:hover .app-qrcode-expand {
   display: block;
 }
 /* 横幅区域结束 */
