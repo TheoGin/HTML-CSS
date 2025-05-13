@@ -12,10 +12,6 @@ body {
 
 /* 通用样式开始 */
 
-.hidden {
-  display: none;
-}
-
 .bold {
   font-weight: 600;
 }
@@ -47,24 +43,28 @@ a {
 }
 
 /* tab栏切换 */
-.tabs {
+.switch-menu {
   border-bottom: 1px solid #ececec;
   font-size: 12px;
   color: #333;
 }
 
-.tabs .code-login-tab .qrcode-login,
-.tabs .code-login-tab .pwd-login {
-  width: 138px;
+.switch-menu .code-login-tab span {
+  width: 50%;
   height: 24px;
-  display: inline-block;
+  display: block;
   text-align: center;
   line-height: 24px;
   cursor: pointer;
+
+  /* 解决有两个边框的问题，不能设置高度 */
+  margin-bottom: -1px;
 }
 
-.tabs .code-login-tab .selected {
+.switch-menu .code-login-tab .selected {
   border-bottom: 1px solid #494949;
+  font-weight: bold;
+  color: #333;
 }
 
 /* tab栏切换结束 */

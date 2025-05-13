@@ -13,13 +13,14 @@
       <div class="login">
         <!-- 右上角登录方式切换结束 -->
         <!-- tab栏切换 -->
-        <div class="tabs">
+        <div class="switch-menu">
           <!-- <div class="qrcode-tab hidden">
             <span class="qrcode-scan bold">二维码登录</span>
           </div> -->
-          <div class="code-login-tab">
-            <span class="qrcode-login bold">短信登录/注册</span>
-            <span class="pwd-login bold selected">密码登录</span>
+          <div class="code-login-tab clearfix">
+            <!-- 行块盒会空白折叠（折叠成一个空格），发生在行块盒或 行块盒之间，所以一行放不下加上浮动即可解决 -->
+            <span class="f-left">短信登录/注册</span>
+            <span class="f-right selected">密码登录</span>
           </div>
         </div>
         <!-- tab栏切换结束 -->
@@ -152,7 +153,7 @@
 
       <!-- 二维码区域 -->
       <div class="qrcode-wrapper hidden">
-        <div class="tabs">
+        <div class="switch-menu">
           <div class="qrcode-tab">
             <span class="qrcode-scan bold">二维码登录</span>
           </div>
