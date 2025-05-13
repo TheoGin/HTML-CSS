@@ -2,13 +2,6 @@
 @import "./common.css";
 @import "./loginFrame.css";
 
-body {
-  font-size: 13px;
-  font-family: Helvetica, Arial, Hiragino Sans GB, Microsoft YaHei,
-    WenQuanYi Micro Hei, sans-serif;
-  line-height: 1.618;
-  /* font: normal 13px / 1.618 Helvetica, Arial, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif; */
-}
 
 /* 通用样式开始 */
 
@@ -53,7 +46,7 @@ a {
 
 .switch-menu .code-login-tab span {
   width: 50%;
-  height: 24px;
+  /* height: 24px; */
   display: block;
   text-align: center;
   line-height: 24px;
@@ -137,9 +130,12 @@ a {
 
 /* 弹出框 */
 .code-login-area .form-item .city .country-popup {
-  width: 300px;
-  height: 300px;
+  /* width: 300px;
+  height: 300px; */
   position: fixed;
+  /* 铺满整个视口 */
+  width: 100%;
+  height: 100%;
   background-color: #fff;
   left: 0;
   /* left: 5px; */

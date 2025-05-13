@@ -1,27 +1,21 @@
-
 /* 引入字体图标在线测试地址代码的样式 */
 @import "//at.alicdn.com/t/c/font_4917597_gvhiwh5jxvp.css";
 
 /* 书写多页面公共样式代码 */
 
-/* body {
-    color: #111;
-} */
-
-/* input {
-    width: 100%;
-    height: 30px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-} */
-
+body {
+  /* font-size: 13px; */
+  font-family: Helvetica, Arial, Hiragino Sans GB, Microsoft YaHei,
+    WenQuanYi Micro Hei, sans-serif;
+  /* line-height: 1.618; */
+  /* font: normal 13px / 1.618 Helvetica, Arial, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif; */
+}
 
 .clearfix::after {
   content: "";
   display: block;
   clear: both;
 }
-
 
 .f-left {
   float: left;
