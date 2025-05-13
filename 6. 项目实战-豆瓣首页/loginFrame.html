@@ -9,164 +9,176 @@
   </head>
   <body>
     <div class="container">
-      <!-- 右上角登录方式切换 -->
-      <div class="login-switch">
-        <div class="login-switch-icon">
-          <a href="" class="code-login icon-switch hidden"></a>
-          <a href="" class="qrcode icon-switch"></a>
-        </div>
-        <!-- <div class="login-switch-text">
+      <!-- 短信登录/注册  密码登录 -->
+      <div class="login">
+        <!-- 右上角登录方式切换 -->
+        <div class="login-switch">
+          <div class="login-switch-icon">
+            <a href="" class="code-login icon-switch hidden"></a>
+            <a href="" class="qrcode icon-switch"></a>
+          </div>
+          <!-- <div class="login-switch-text">
           <a href="" class="code-login">短信登录/注册</a>
           <a href="" class="qrcode">扫码登录</a>
         </div> -->
-      </div>
-      <!-- 右上角登录方式切换结束 -->
-      <!-- tab栏切换 -->
-      <div class="tabs">
-        <div class="qrcode-tab hidden">
-          <span class="qrcode-scan bold">二维码登录</span>
         </div>
-        <div class="code-login-tab">
-          <span class="qrcode-login bold">短信登录/注册</span>
-          <span class="pwd-login bold selected">密码登录</span>
-        </div>
-      </div>
-      <!-- tab栏切换结束 -->
-
-      <!-- 二维码区域 -->
-      <div class="qrcode-area hidden">
-        <div class="qrcode">
-          <img src="./img/icon-qr-small.png" alt="" />
-        </div>
-        <div class="tip">
-          <span> 请打开豆瓣 App 扫一扫 或 <a href="">短信登录验证</a> </span>
-        </div>
-      </div>
-      <!-- 二维码区域结束 -->
-
-      <!-- 密码或验证码登录区域 -->
-      <form class="code-login-area">
-        <!-- 验证码登录区域 -->
-        <div class="sncode-login">
-          <div class="readme">
-            请仔细阅读
-            <a href=""> 豆瓣使用协议、豆瓣个人信息保护政策 </a>
+        <!-- 右上角登录方式切换结束 -->
+        <!-- tab栏切换 -->
+        <div class="tabs">
+          <!-- <div class="qrcode-tab hidden">
+            <span class="qrcode-scan bold">二维码登录</span>
+          </div> -->
+          <div class="code-login-tab">
+            <span class="qrcode-login bold">短信登录/注册</span>
+            <span class="pwd-login bold selected">密码登录</span>
           </div>
-          <div class="form-item">
-            <div class="phone">
-              <input type="text" placeholder="手机号" />
+        </div>
+        <!-- tab栏切换结束 -->
+
+        <!-- 密码或验证码登录区域 -->
+        <form class="code-login-area">
+          <!-- 验证码登录区域 -->
+          <div class="sncode-login">
+            <div class="readme">
+              请仔细阅读
+              <a href=""> 豆瓣使用协议、豆瓣个人信息保护政策 </a>
             </div>
-            <div class="city">
-              <span class="phone-start bold pointer">+86</span>
-              <div class="country-popup">
-                <div class="wrapper">
-                  <header class="country">
-                    <span class="title bold"> 选择国际区号 </span>
-                    <div class="close pointer">×</div>
-                  </header>
-                  <div class="country-list">
-                    <ul>
-                      <li class="clearfix active">
-                        <span class="title f-left bold">中国大陆</span>
-                        <span class="f-right">+86</span>
-                      </li>
-                      <li class="clearfix">
-                        <span class="title f-left bold">中国香港</span>
-                        <span class="f-right">+852</span>
-                      </li>
-                      <li class="clearfix">
-                        <span class="title f-left bold">中国香港</span>
-                        <span class="f-right">+852</span>
-                      </li>
-                      <li class="clearfix">
-                        <span class="title f-left bold">中国香港</span>
-                        <span class="f-right">+852</span>
-                      </li>
-                      <li class="clearfix">
-                        <span class="title f-left bold">中国香港</span>
-                        <span class="f-right">+852</span>
-                      </li>
-                      <li class="clearfix">
-                        <span class="title f-left bold">中国香港</span>
-                        <span class="f-right">+852</span>
-                      </li>
-                      <li class="clearfix">
-                        <span class="title f-left bold">中国香港</span>
-                        <span class="f-right">+852</span>
-                      </li>
-                      <li class="clearfix">
-                        <span class="title f-left bold">中国香港</span>
-                        <span class="f-right">+852</span>
-                      </li>
-                    </ul>
+            <div class="form-item">
+              <div class="phone">
+                <input type="text" placeholder="手机号" />
+              </div>
+              <div class="city">
+                <span class="phone-start bold pointer">+86</span>
+                <div class="country-popup hidden">
+                  <div class="wrapper">
+                    <header class="country">
+                      <span class="title bold"> 选择国际区号 </span>
+                      <div class="close pointer">×</div>
+                    </header>
+                    <div class="country-list">
+                      <ul>
+                        <li class="clearfix active">
+                          <span class="title f-left bold">中国大陆</span>
+                          <span class="f-right">+86</span>
+                        </li>
+                        <li class="clearfix">
+                          <span class="title f-left bold">中国香港</span>
+                          <span class="f-right">+852</span>
+                        </li>
+                        <li class="clearfix">
+                          <span class="title f-left bold">中国香港</span>
+                          <span class="f-right">+852</span>
+                        </li>
+                        <li class="clearfix">
+                          <span class="title f-left bold">中国香港</span>
+                          <span class="f-right">+852</span>
+                        </li>
+                        <li class="clearfix">
+                          <span class="title f-left bold">中国香港</span>
+                          <span class="f-right">+852</span>
+                        </li>
+                        <li class="clearfix">
+                          <span class="title f-left bold">中国香港</span>
+                          <span class="f-right">+852</span>
+                        </li>
+                        <li class="clearfix">
+                          <span class="title f-left bold">中国香港</span>
+                          <span class="f-right">+852</span>
+                        </li>
+                        <li class="clearfix">
+                          <span class="title f-left bold">中国香港</span>
+                          <span class="f-right">+852</span>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="form-item">
-            <div class="sncode">
-              <input type="text" placeholder="验证码" />
+            <div class="form-item">
+              <div class="sncode">
+                <input type="text" placeholder="验证码" />
+              </div>
+              <div class="sncode-btn">
+                <a>获取验证码</a>
+              </div>
             </div>
-            <div class="sncode-btn">
-              <a>获取验证码</a>
+            <div class="form-item">
+              <button class="login-btn btn pointer">登录豆瓣</button>
             </div>
-          </div>
-          <div class="form-item">
-            <button class="login-btn btn pointer">登录豆瓣</button>
-          </div>
-          <div class="readme clearfix">
-            <div class="auto-login f-left">
-              <label>
-                <input type="checkbox" />
-                下次自动登录
-              </label>
-            </div>
-            <div class="f-right">
-              <a href=""> 收不到验证码 </a>
-            </div>
-          </div>
-        </div>
-        <!-- 密码登录区域 -->
-        <div class="pwd-login hidden">
-          <div class="readme tx-right">
-            <a href="">找回密码</a>
-          </div>
-          <div class="form-item">
-            <div class="phone">
-              <input type="text" placeholder="手机号" />
+            <div class="readme clearfix">
+              <div class="auto-login f-left">
+                <label>
+                  <input type="checkbox" />
+                  下次自动登录
+                </label>
+              </div>
+              <div class="f-right">
+                <a href=""> 收不到验证码 </a>
+              </div>
             </div>
           </div>
-          <div class="form-item">
-            <div class="sncode">
-              <input type="password" placeholder="密码" />
+          <!-- 密码登录区域 -->
+          <div class="pwd-login hidden">
+            <div class="readme tx-right">
+              <a href="">找回密码</a>
+            </div>
+            <div class="form-item">
+              <div class="phone">
+                <input type="text" placeholder="手机号" />
+              </div>
+            </div>
+            <div class="form-item">
+              <div class="sncode">
+                <input type="password" placeholder="密码" />
+              </div>
+            </div>
+            <div class="form-item">
+              <button class="login-btn btn pointer active">登录豆瓣</button>
+            </div>
+            <div class="readme clearfix">
+              <div class="auto-login f-left">
+                <label>
+                  <input type="checkbox" />
+                  下次自动登录
+                </label>
+              </div>
+              <div class="f-right">
+                <a href=""> 海外手机登录 </a>
+              </div>
             </div>
           </div>
-          <div class="form-item">
-            <button class="login-btn btn pointer active">登录豆瓣</button>
-          </div>
-          <div class="readme clearfix">
-            <div class="auto-login f-left">
-              <label>
-                <input type="checkbox" />
-                下次自动登录
-              </label>
-            </div>
-            <div class="f-right">
-              <a href=""> 海外手机登录 </a>
-            </div>
-          </div>
-        </div>
-      </form>
-      <!-- 密码或验证码登录区域结束 -->
+        </form>
+        <!-- 密码或验证码登录区域结束 -->
 
-      <!-- 第三方登录区域开始 -->
-      <div class="three-login-area">
-        <span class="txt">第三方登录：</span>
-        <i class="iconfont icon-weixin"></i>
-        <i class="iconfont icon-weibo"></i>
+        <!-- 第三方登录区域开始 -->
+        <div class="three-login-area">
+          <span class="txt">第三方登录：</span>
+          <i class="iconfont icon-weixin"></i>
+          <i class="iconfont icon-weibo"></i>
+        </div>
+        <!-- 第三方登录区域结束 -->
       </div>
-      <!-- 第三方登录区域结束 -->
+      <!-- 短信/注册  密码登录结束 -->
+
+      <!-- 二维码区域 -->
+      <div class="qrcode-wrapper hidden">
+        <div class="tabs">
+          <div class="qrcode-tab">
+            <span class="qrcode-scan bold">二维码登录</span>
+          </div>
+        </div>
+        <div class="qrcode-area">
+          <div class="qrcode">
+            <img src="./img/icon-qr-small.png" alt="" />
+          </div>
+          <div class="tip">
+            <span> 请打开豆瓣 App 扫一扫 或 <a href="">短信登录验证</a> </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 二维码区域结束 -->
     </div>
   </body>
 </html>
