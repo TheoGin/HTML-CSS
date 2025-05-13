@@ -1,5 +1,6 @@
 @import "./reset.css";
 @import "./common.css";
+@import "//at.alicdn.com/t/c/font_4917597_gvhiwh5jxvp.css";
 @import "./loginFrame.css";
 
 body {
@@ -296,10 +297,42 @@ a {
   width: 100%;
   color: #fff;
   height: 34px;
+  font-size: 15px;
+}
+
+.code-login-area .form-item .login-btn.active {
+  background-color: #41ac52;
 }
 
 .code-login-area .pwd-login .form-item .phone input {
   padding: 8px 10px;
 }
 
+.code-login-area .readme .auto-login {
+  color: #333;
+}
+
+.code-login-area .readme .auto-login input[type="checkbox"] {
+  vertical-align: middle;
+}
+
 /* 密码或验证码登录区域结束 */
+
+.three-login-area {
+  border-top: 1px solid #dfdfdf;
+  padding: 10px 0;
+  color: #9b9b9b;
+  font-size: 11px;
+}
+
+.three-login-area .iconfont {
+  margin-left: 12px;
+}
+
+.three-login-area .icon-weixin {
+  color: #64c574;
+}
+
+.three-login-area .icon-weibo {
+  color: #f27272;
+}

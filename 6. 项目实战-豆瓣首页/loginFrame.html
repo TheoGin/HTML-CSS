@@ -47,7 +47,7 @@
       <!-- 密码或验证码登录区域 -->
       <form class="code-login-area">
         <!-- 验证码登录区域 -->
-        <div class="sncode-login hidden">
+        <div class="sncode-login">
           <div class="readme">
             请仔细阅读
             <a href=""> 豆瓣使用协议、豆瓣个人信息保护政策 </a>
@@ -58,7 +58,7 @@
             </div>
             <div class="city">
               <span class="phone-start bold pointer">+86</span>
-              <div class="country-popup hidden">
+              <div class="country-popup ">
                 <div class="wrapper">
                   <header class="country">
                     <span class="title bold"> 选择国际区号 </span>
@@ -115,12 +115,21 @@
           <div class="form-item">
             <button class="login-btn btn pointer">登录豆瓣</button>
           </div>
-          <div class="readme tx-right">
-            <a href=""> 收不到验证码 </a>
+          <div class="readme clearfix">
+            
+            <div class="auto-login f-left">
+              <label>
+                <input type="checkbox" />
+                下次自动登录
+              </label>
+            </div>
+            <div class="f-right">
+              <a href=""> 收不到验证码 </a>
+            </div>
           </div>
         </div>
         <!-- 密码登录区域 -->
-        <div class="pwd-login">
+        <div class="pwd-login hidden">
           <div class="readme tx-right">
             <a href="">找回密码</a>
           </div>
@@ -135,14 +144,30 @@
             </div>
           </div>
           <div class="form-item">
-            <button class="login-btn btn pointer">登录豆瓣</button>
+            <button class="login-btn btn pointer active">登录豆瓣</button>
           </div>
-          <div class="readme tx-right">
-            <a href=""> 海外手机登录 </a>
+          <div class="readme clearfix">
+            <div class="auto-login f-left">
+              <label>
+                <input type="checkbox" />
+                下次自动登录
+              </label>
+            </div>
+            <div class="f-right">
+              <a href=""> 海外手机登录 </a>
+            </div>
           </div>
         </div>
       </form>
       <!-- 密码或验证码登录区域结束 -->
+
+      <!-- 第三方登录区域开始 -->
+       <div class="three-login-area">
+        <span class="txt">第三方登录：</span>
+        <i class="iconfont icon-weixin"></i>
+        <i class="iconfont icon-weibo"></i>
+       </div>
+      <!-- 第三方登录区域结束 -->
     </div>
   </body>
 </html>
