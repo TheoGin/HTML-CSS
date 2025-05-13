@@ -256,31 +256,38 @@ a {
 }
 
 .code-login-area .form-item .city .country-popup .country-list {
-    padding: 36px 0 20px 15px;
+  padding: 36px 0 20px 15px;
 }
 
 .code-login-area .form-item .city .country-popup .country-list ul {
-    margin-top: 10px;
-    height: 180px;
-    overflow: auto;
-    padding-right: 10px;
+  margin-top: 10px;
+  height: 180px;
+  overflow: auto;
+  padding-right: 10px;
 }
 
 .code-login-area .form-item .city .country-popup .country-list ul li {
-    border-top: 1px solid #e5e5e5;
-    height: 38px;
-    line-height: 38px;
-    font-size: 14px;
-    color: #494949;
+  border-top: 1px solid #e5e5e5;
+  height: 38px;
+  line-height: 38px;
+  font-size: 14px;
+  color: #494949;
 }
 
 .code-login-area .form-item .city .country-popup .country-list ul li.active {
-    color: #41ac52;
+  color: #41ac52;
 }
 
-.code-login-area .form-item .city .country-popup .country-list ul li.active .title::after {
-    content: "✔︎";
-    margin-left: 10px;
+.code-login-area
+  .form-item
+  .city
+  .country-popup
+  .country-list
+  ul
+  li.active
+  .title::after {
+  content: "✔︎";
+  margin-left: 10px;
 }
 
 .code-login-area .form-item .sncode input {
@@ -288,9 +295,9 @@ a {
 }
 
 .code-login-area .form-item .sncode-btn {
-    position: absolute;
-    right: 5px;
-    top: 5px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
 }
 
 .code-login-area .form-item .login-btn {
