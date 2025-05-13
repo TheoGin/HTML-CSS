@@ -12,6 +12,13 @@ body {
 
 /* 通用样式开始 */
 
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #e4e6e5;
+}
+
 .bold {
   font-weight: 600;
 }
@@ -92,7 +99,7 @@ a {
 
 /* 密码或验证码登录区域 */
 
-.code-login-area .readme {
+.code-login-area .form-item {
   color: #9b9b9b;
   margin: 10px 0;
   font-size: 12px;
@@ -103,11 +110,11 @@ a {
   position: relative;
 }
 
-.code-login-area .form-item input {
+/* .code-login-area .form-item input {
   border: 1px solid #e4e6e5;
   width: 280px;
   height: 30px;
-}
+} */
 
 .code-login-area .form-item .phone input {
   padding: 8px 40px 8px 60px;
@@ -119,6 +126,7 @@ a {
   left: 10px;
   top: 5px;
   width: 40px;
+  color: #333;
 }
 
 .code-login-area .form-item .city .phone-start::after {
@@ -151,6 +159,8 @@ a {
   margin: 10px auto;
   border-radius: 3px;
   position: relative;
+  /* overflow隐藏超出的背景，或者设置超出的区域也设置border-radius: 3px; */
+  overflow: hidden;
 }
 
 .code-login-area .form-item .city .country-popup .country {
@@ -164,7 +174,9 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+
+  /* border-radius: 3px; */
+  /* z-index: -1; */
 }
 
 .code-login-area .form-item .city .country-popup .country .title {
@@ -198,6 +210,10 @@ a {
   line-height: 38px;
   font-size: 14px;
   color: #494949;
+}
+
+.code-login-area .form-item .city .country-popup .country-list ul li:last-child {
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .code-login-area .form-item .city .country-popup .country-list ul li.active {
@@ -241,11 +257,11 @@ a {
   padding: 8px 10px;
 }
 
-.code-login-area .readme .auto-login {
+.code-login-area .form-item .auto-login {
   color: #333;
 }
 
-.code-login-area .readme .auto-login input[type="checkbox"] {
+.code-login-area .form-item .auto-login input[type="checkbox"] {
   vertical-align: middle;
 }
 
