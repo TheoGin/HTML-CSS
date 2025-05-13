@@ -34,3 +34,14 @@
 .hidden {
   display: none;
 }
+
+.btn {
+  background-color: #00b51d;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.btn:disabled {
+  background-color: rgba(66, 189, 86, 0.5);
+  cursor: not-allowed;
+}
