@@ -482,6 +482,11 @@ ul {
 
 /* 视频区域开始 */
 
+.video-main .section-title a:hover {
+  background-color: #fff;
+  color: #007722;
+}
+
 .video-main .item-list li {
   width: 250px;
   float: left;
