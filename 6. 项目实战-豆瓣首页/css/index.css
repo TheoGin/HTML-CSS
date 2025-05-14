@@ -483,8 +483,12 @@ ul {
 /* 视频区域开始 */
 
 .video-main .section-title a:hover {
-  background-color: #fff;
-  color: #007722;
+  /* background-color: #fff; */
+  /* 背景颜色的初始值为transparent */
+  background-color: initial;
+
+  /* 文字颜色不受影响，因为.section-title .title本身设置了颜色，就不会用继承的 */
+  /* color: #007722; */
 }
 
 .video-main .item-list li {
