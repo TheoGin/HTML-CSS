@@ -20,6 +20,21 @@ a:hover {
   color: #3377AA;
 }
 
+
+/* 首页统一样式结束 */
+
+/* 首页通用样式开始 */
+
+.container {
+  width: 950px;
+  margin: 0 auto;
+}
+
+.adv-img img {
+  width: 100%;
+  display: block;
+}
+
 .section-title {
   margin: 12px 0;
 }
@@ -31,7 +46,7 @@ a:hover {
 }
 
 .section-title .title::after {
-  content: "· · · · · · ";
+  content: " · · · · · · ";
 }
 
 .section-title .link::before {
@@ -41,17 +56,6 @@ a:hover {
 .section-title .link::after {
   content: ")";
 }
-
-
-/* 首页统一样式结束 */
-
-/* 首页通用样式开始 */
-
-.container {
-  width: 950px;
-  margin: 0 auto;
-}
-
 /* 首页通用样式结束 */
 
 /* 头部区域开始 */
@@ -308,11 +312,6 @@ a:hover {
   margin-left: 30px;
 }
 
-.section .container .aside-right .adv-img img {
-  width: 100%;
-  display: block;
-}
-
 .section .container .aside-right .main .adv-list li {
   margin-bottom: 15px;
   line-height: 1.5;
@@ -340,28 +339,6 @@ a:hover {
   /* 2. 主区域创建BFC避开浮动元素 */
   overflow: hidden;
 }
-
-/* .section .container .main .section-title {
-  margin: 12px 0;
-}
-
-.section .container .main .section-title .title {
-  display: inline;
-  color: #007722;
-  font-size: 15px;
-}
-
-.section .container .main .section-title .title::after {
-  content: "· · · · · · ";
-}
-
-.section .container .main .section-title .link::before {
-  content: "(";
-}
-
-.section .container .main .section-title .link::after {
-  content: ")";
-} */
 
 .section .container .main .f-left {
   width: 350px;
