@@ -478,6 +478,12 @@ ul {
 
 .video-main .item-list li {
   width: 250px;
+  float: left;
+  margin-right: 30px;
+}
+
+.video-main .item-list li:last-child {
+  margin-right: 0;
 }
 
 .video-main .item-list li .img {
