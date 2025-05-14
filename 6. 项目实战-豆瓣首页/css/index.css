@@ -446,7 +446,10 @@ ul {
 /* 时间开始 */
 
 .time-main .item-list li {
-  float: left;
+  /* 用浮动内容一多，会导致同一行的li对不齐——》改为行块盒 */
+  /* float: left; */
+  display: inline-block;
+  vertical-align: top;
   width: 100px;
   margin-right: 60px;
   margin-bottom: 30px;
