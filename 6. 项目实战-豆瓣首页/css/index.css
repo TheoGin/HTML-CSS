@@ -12,7 +12,7 @@ button {
 }
 
 a {
-  color: #3377AA;
+  color: #3377aa;
 }
 
 a:hover {
@@ -24,7 +24,6 @@ a:hover {
 a:active {
   background-color: #f93;
 }
-
 
 /* 首页统一样式结束 */
 
@@ -98,8 +97,7 @@ a:active {
   content: ")";
 }
 
-
-.adv-tag::after  {
+.adv-tag::after {
   content: "广告";
   font-size: 13px;
   color: #c9c9c9;
@@ -361,10 +359,14 @@ a:active {
 
 .section .container .aside-right .main .hot-list li .info {
   color: #aaa;
-  margin-right: 4px;
+
   font-size: 13px;
 }
 
+/* 可能有多个span */
+.section .container .aside-right .main .hot-list li .info span {
+  margin-right: 4px;
+}
 
 .section .container .main .f-left {
   width: 350px;
