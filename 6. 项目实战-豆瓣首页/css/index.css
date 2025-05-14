@@ -86,6 +86,10 @@ a:active {
   content: " · · · · · · ";
 }
 
+.section-title .link {
+  font-size: 12px;
+}
+
 .section-title .link::before {
   content: "(";
 }
@@ -93,6 +97,15 @@ a:active {
 .section-title .link::after {
   content: ")";
 }
+
+
+.adv-tag::after  {
+  content: "广告";
+  font-size: 13px;
+  color: #c9c9c9;
+  margin-left: 5px;
+}
+
 /* 首页通用样式结束 */
 
 /* 头部区域开始 */
@@ -337,23 +350,16 @@ a:active {
 /* 横幅区域结束 */
 
 /* 热点开始 */
-.section .container .aside-right .main .adv-list li {
+.section .container .aside-right .main .hot-list li {
   margin-bottom: 15px;
   line-height: 1.5;
 }
 
-.section .container .aside-right .main .adv-list li .link {
+.section .container .aside-right .main .hot-list li .link {
   font-size: 14px;
 }
 
-.section .container .aside-right .main .adv-list li:first-child .link a::after  {
-  content: "广告";
-  font-size: 13px;
-  color: #c9c9c9;
-  margin-left: 5px;
-}
-
-.section .container .aside-right .main .adv-list li .info {
+.section .container .aside-right .main .hot-list li .info {
   color: #aaa;
   margin-right: 4px;
   font-size: 13px;
@@ -364,33 +370,33 @@ a:active {
   width: 350px;
 }
 
-.section .container .main .f-left .hot-list {
+.section .container .main .f-left .item-list {
   text-align: justify;
 }
 
-.section .container .main .f-left .hot-list::after {
+.section .container .main .f-left .item-list::after {
   content: "";
   display: inline-block;
   width: 100%;
 }
 
-.section .container .main .f-left .hot-list li {
+.section .container .main .f-left .item-list li {
   width: 170px;
   display: inline-block;
   line-height: 1.5;
 }
 
-.section .container .main .f-left .hot-list li .poster {
+.section .container .main .f-left .item-list li .poster {
   font-size: 0;
 }
 
-.section .container .main .f-left .hot-list li .poster img {
+.section .container .main .f-left .item-list li .poster img {
   width: 170px;
   height: 170px;
   /* display: block; */
 }
 
-.section .container .main .f-left .hot-list li .link span {
+.section .container .main .f-left .item-list li .link span {
   color: #999;
 }
 
