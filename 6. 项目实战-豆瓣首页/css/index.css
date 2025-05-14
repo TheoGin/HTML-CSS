@@ -118,6 +118,22 @@ ul {
   color: #494949;
 }
 
+/* 提取为公共样式 */
+.item-list li {
+  /* 用浮动内容一多，会导致同一行的li对不齐——》改为行块盒 */
+  /* float: left; */
+
+  display: inline-block;
+  /* 行盒之间垂直方向上默认基线对齐 */
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.item-list li .img img {
+  width: 100%;
+  display: block;
+}
+
 /* 首页通用样式结束 */
 
 /* 头部区域开始 */
@@ -362,9 +378,6 @@ ul {
 /* 横幅区域结束 */
 
 /* 热点开始 */
-.section .container .aside-right .main .hot-list {
-  line-height: 1.5;
-}
 
 .section .container .aside-right .main .hot-list li {
   margin-bottom: 15px;
@@ -400,23 +413,13 @@ ul {
 
 .hot-main .f-left .item-list li {
   width: 170px;
-  display: inline-block;
-  line-height: 1.5;
   font-size: 12px;
   margin: 10px 0;
-
-  /* 行盒之间垂直方向上默认基线对齐 */
-  vertical-align: top;
 }
 
-.hot-main .f-left .item-list li .poster {
-  font-size: 0;
-}
-
-.hot-main .f-left .item-list li .poster img {
+.hot-main .f-left .item-list li .img {
   width: 170px;
   height: 170px;
-  /* display: block; */
 }
 
 .hot-main .f-left .item-list li .link span {
@@ -429,7 +432,6 @@ ul {
 
 .hot-main .f-right ul li {
   margin-bottom: 12px;
-  line-height: 1.5;
   font-size: 12px;
 }
 
@@ -446,20 +448,16 @@ ul {
 /* 时间开始 */
 
 .time-main .item-list li {
-  /* 用浮动内容一多，会导致同一行的li对不齐——》改为行块盒 */
-  /* float: left; */
-  display: inline-block;
-  vertical-align: top;
   width: 100px;
   margin-right: 60px;
   margin-bottom: 30px;
-  line-height: normal;
+  /* line-height: normal; */
 
   /* 文字是居中的 */
   text-align: center;
 }
 
-.time-main .item-list li .poster img {
+.time-main .item-list li .img img {
   width: 100px;
   height: 140px;
 }
@@ -494,8 +492,6 @@ ul {
 .video-main .item-list li {
   width: 250px;
   /* float: left; */
-  display: inline-block;
-  vertical-align: top;
   margin-right: 30px;
 }
 
@@ -536,11 +532,6 @@ ul {
   top: 0;
   left: 0;
   z-index: 1;
-}
-
-.video-main .item-list li .img img {
-  width: 100%;
-  display: block;
 }
 
 .video-main .item-list li .words {
