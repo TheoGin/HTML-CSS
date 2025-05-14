@@ -442,7 +442,7 @@ ul {
 
 /* 时间开始 */
 
-.time-list li {
+.time-main .item-list li {
   float: left;
   width: 100px;
   margin-right: 60px;
@@ -450,21 +450,21 @@ ul {
   line-height: normal;
 }
 
-.time-list li .poster img {
+.time-main .item-list li .poster img {
   width: 100px;
   height: 140px;
 }
 
-.time-list li .title a {
+.time-main .item-list li .title a {
   font-size: 13px;
   color: #333;
 }
 
-.time-list li .title a:hover {
+.time-main .item-list li .title a:hover {
   color: #fff;
 }
 
-.time-list li .desc {
+.time-main .item-list li .desc {
   color: #999;
   margin-top: 10px;
   font-size: 12px;
