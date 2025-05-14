@@ -348,74 +348,76 @@ a:active {
 /* 横幅区域结束 */
 
 /* 热点开始 */
+.section .container .aside-right .main .hot-list {
+  line-height: 1.5;
+}
+
 .section .container .aside-right .main .hot-list li {
   margin-bottom: 15px;
-  line-height: 1.5;
 }
 
 .section .container .aside-right .main .hot-list li .link {
   font-size: 14px;
 }
 
-.section .container .aside-right .main .hot-list li .info {
+.section .container .aside-right .main .hot-list li .desc {
   color: #aaa;
-
   font-size: 13px;
 }
 
 /* 可能有多个span */
-.section .container .aside-right .main .hot-list li .info span {
+.section .container .aside-right .main .hot-list li .desc span {
   margin-right: 4px;
 }
 
-.section .container .main .f-left {
+.hot-main .f-left {
   width: 350px;
 }
 
-.section .container .main .f-left .item-list {
+.hot-main .f-left .item-list {
   text-align: justify;
 }
 
-.section .container .main .f-left .item-list::after {
+.hot-main .f-left .item-list::after {
   content: "";
   display: inline-block;
   width: 100%;
 }
 
-.section .container .main .f-left .item-list li {
+.hot-main .f-left .item-list li {
   width: 170px;
   display: inline-block;
   line-height: 1.5;
 }
 
-.section .container .main .f-left .item-list li .poster {
+.hot-main .f-left .item-list li .poster {
   font-size: 0;
 }
 
-.section .container .main .f-left .item-list li .poster img {
+.hot-main .f-left .item-list li .poster img {
   width: 170px;
   height: 170px;
   /* display: block; */
 }
 
-.section .container .main .f-left .item-list li .link span {
+.hot-main .f-left .item-list li .link span {
   color: #999;
 }
 
-.section .container .main .f-right {
+.hot-main .f-right {
   width: 275px;
 }
 
-.section .container .main .f-right ul li {
+.hot-main .f-right ul li {
   margin-bottom: 12px;
   line-height: 1.5;
 }
 
-.section .container .main .f-right ul li .title {
+.hot-main .f-right ul li .title {
   color: #999;
 }
 
-.section .container .main .f-right ul li .desc {
+.hot-main .f-right ul li .desc {
   color: #666;
 }
 
