@@ -11,6 +11,38 @@ button {
   cursor: pointer;
 }
 
+a:hover {
+  color: #fff;
+  background-color: #37a;
+}
+
+.link {
+  color: #3377AA;
+}
+
+.section-title {
+  margin: 12px 0;
+}
+
+.section-title .title {
+  display: inline;
+  color: #007722;
+  font-size: 15px;
+}
+
+.section-title .title::after {
+  content: "· · · · · · ";
+}
+
+.section-title .link::before {
+  content: "(";
+}
+
+.section-title .link::after {
+  content: ")";
+}
+
+
 /* 首页统一样式结束 */
 
 /* 首页通用样式开始 */
@@ -262,3 +294,124 @@ button {
   display: block;
 }
 /* 横幅区域结束 */
+
+/* 热点开始 */
+
+.section {
+  padding: 35px 0;
+}
+
+.section .container .aside-right {
+  /* 1. 侧边栏 浮动 + 定宽 */
+  float: right;
+  width: 265px;
+  margin-left: 30px;
+}
+
+.section .container .aside-right .adv-img img {
+  width: 100%;
+  display: block;
+}
+
+.section .container .aside-right .main .adv-list li {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.section .container .aside-right .main .adv-list li .link {
+  font-size: 14px;
+}
+
+.section .container .aside-right .main .adv-list li:first-child .link a::after  {
+  content: "广告";
+  font-size: 13px;
+  color: #c9c9c9;
+  margin-left: 5px;
+}
+
+.section .container .aside-right .main .adv-list li .info {
+  color: #aaa;
+  margin-right: 4px;
+  font-size: 13px;
+}
+
+.section .container .main {
+  font-size: 12px;
+  /* 2. 主区域创建BFC避开浮动元素 */
+  overflow: hidden;
+}
+
+/* .section .container .main .section-title {
+  margin: 12px 0;
+}
+
+.section .container .main .section-title .title {
+  display: inline;
+  color: #007722;
+  font-size: 15px;
+}
+
+.section .container .main .section-title .title::after {
+  content: "· · · · · · ";
+}
+
+.section .container .main .section-title .link::before {
+  content: "(";
+}
+
+.section .container .main .section-title .link::after {
+  content: ")";
+} */
+
+.section .container .main .f-left {
+  width: 350px;
+}
+
+.section .container .main .f-left .hot-list {
+  text-align: justify;
+}
+
+.section .container .main .f-left .hot-list::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+.section .container .main .f-left .hot-list li {
+  width: 170px;
+  display: inline-block;
+  line-height: 1.5;
+}
+
+.section .container .main .f-left .hot-list li .poster {
+  font-size: 0;
+}
+
+.section .container .main .f-left .hot-list li .poster img {
+  width: 170px;
+  height: 170px;
+  /* display: block; */
+}
+
+.section .container .main .f-left .hot-list li .link span {
+  color: #999;
+}
+
+.section .container .main .f-right {
+  width: 275px;
+}
+
+.section .container .main .f-right ul li {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.section .container .main .f-right ul li .title {
+  color: #999;
+}
+
+.section .container .main .f-right ul li .desc {
+  color: #666;
+}
+
+/* 热点结束 */
