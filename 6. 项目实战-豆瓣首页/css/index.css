@@ -454,6 +454,9 @@ ul {
   margin-right: 60px;
   margin-bottom: 30px;
   line-height: normal;
+
+  /* 文字是居中的 */
+  text-align: center;
 }
 
 .time-main .item-list li .poster img {
