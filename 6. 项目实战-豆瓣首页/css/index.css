@@ -107,11 +107,15 @@ a:active {
 
 ul {
   /* break-all（所有位置截断）：截断所有。所有字符都在文字处截断 */
-  word-break: break-all;/* 避免一个单词太长超出某个区域 */
+  word-break: break-all; /* 避免一个单词太长超出某个区域 */
 }
 
 .aside-left .title {
   font-size: 24px;
+  
+}
+
+.dark-color {
   color: #494949;
 }
 
