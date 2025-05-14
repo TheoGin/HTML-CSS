@@ -493,11 +493,18 @@ ul {
 
 .video-main .item-list li {
   width: 250px;
-  float: left;
+  /* float: left; */
+  display: inline-block;
+  vertical-align: top;
   margin-right: 30px;
 }
 
-.video-main .item-list li:last-child {
+/* .video-main .item-list li:last-child {
+  margin-right: 0;
+} */
+ 
+
+.video-main .item-list li:nth-child(3n) {
   margin-right: 0;
 }
 
