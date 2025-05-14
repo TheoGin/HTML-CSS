@@ -104,6 +104,11 @@ a:active {
   margin-left: 5px;
 }
 
+ul {
+  /* break-all（所有位置截断）：截断所有。所有字符都在文字处截断 */
+  word-break: break-all;/* 避免一个单词太长超出某个区域 */
+}
+
 /* 首页通用样式结束 */
 
 /* 头部区域开始 */
@@ -388,6 +393,8 @@ a:active {
   width: 170px;
   display: inline-block;
   line-height: 1.5;
+  font-size: 12px;
+  margin: 10px 0;
 
   /* 行盒之间垂直方向上默认基线对齐 */
   vertical-align: top;
@@ -414,6 +421,7 @@ a:active {
 .hot-main .f-right ul li {
   margin-bottom: 12px;
   line-height: 1.5;
+  font-size: 12px;
 }
 
 .hot-main .f-right ul li .title {
