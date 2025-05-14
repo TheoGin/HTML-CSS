@@ -388,6 +388,9 @@ a:active {
   width: 170px;
   display: inline-block;
   line-height: 1.5;
+
+  /* 行盒之间垂直方向上默认基线对齐 */
+  vertical-align: top;
 }
 
 .hot-main .f-left .item-list li .poster {
