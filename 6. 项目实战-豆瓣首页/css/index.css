@@ -11,13 +11,18 @@ button {
   cursor: pointer;
 }
 
+a {
+  color: #3377AA;
+}
+
 a:hover {
   color: #fff;
   background-color: #37a;
 }
 
-.link {
-  color: #3377AA;
+/* 鼠标按下时的a元素 */
+a:active {
+  background-color: #f93;
 }
 
 
