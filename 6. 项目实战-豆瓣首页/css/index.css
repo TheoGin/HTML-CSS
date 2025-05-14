@@ -68,6 +68,7 @@ a:active {
 
 .adv-img img {
   width: 100%;
+  /* 清除基线对齐造成的白边 */
   display: block;
 }
 
