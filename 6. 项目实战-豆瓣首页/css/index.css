@@ -35,6 +35,38 @@ a:active {
   margin: 0 auto;
 }
 
+.section {
+  padding: 35px 0;
+}
+
+/* :nth-of-type不能解决添加section导致的问题，因为这个伪类【首先看元素相同是section，所以会算上】；但没有.section类名不会有这个背景样式————》给这些元素外面在套一个元素，就可以解决 */
+/* .section:nth-of-type(even) {
+  background-color: #f7f7f7;
+} */
+
+.section:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+.aside-left {
+  /* 左侧边栏 浮动 + 定宽 */
+  float: left;
+  width: 100px;
+  margin-right: 20px;
+}
+
+.aside-right {
+  /* 右侧边栏 浮动 + 定宽 */
+  float: right;
+  width: 265px;
+  margin-left: 30px;
+}
+
+.main {
+  /* 主区域创建BFC避开浮动元素 */
+  overflow: hidden;
+}
+
 .adv-img img {
   width: 100%;
   display: block;
@@ -305,18 +337,6 @@ a:active {
 /* 横幅区域结束 */
 
 /* 热点开始 */
-
-.section {
-  padding: 35px 0;
-}
-
-.section .container .aside-right {
-  /* 1. 侧边栏 浮动 + 定宽 */
-  float: right;
-  width: 265px;
-  margin-left: 30px;
-}
-
 .section .container .aside-right .main .adv-list li {
   margin-bottom: 15px;
   line-height: 1.5;
@@ -339,11 +359,6 @@ a:active {
   font-size: 13px;
 }
 
-.section .container .main {
-  font-size: 12px;
-  /* 2. 主区域创建BFC避开浮动元素 */
-  overflow: hidden;
-}
 
 .section .container .main .f-left {
   width: 350px;
