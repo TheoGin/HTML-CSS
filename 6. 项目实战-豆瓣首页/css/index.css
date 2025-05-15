@@ -617,6 +617,22 @@ ul {
   background-position: 0 -11px;
 }
 
+.moive-main li .star .star_bg.star40 {
+  background-position: 0 -22px;
+}
+
+.moive-main li .star .star_bg.star35 {
+  background-position: 0 -33px;
+}
+
+.moive-main li .star .star_bg.star30 {
+  background-position: 0 -44px;
+}
+
+.moive-main li .star .star_bg.star25 {
+  background-position: 0 -55px;
+}
+
 .moive-main li .star span {
   color: #e09015;
   font-size: 12px;
