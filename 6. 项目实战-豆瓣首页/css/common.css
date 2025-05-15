@@ -1,5 +1,5 @@
 /* 引入字体图标在线测试地址代码的样式 */
-@import "//at.alicdn.com/t/c/font_4917597_wlzkg293yy.css";
+@import "//at.alicdn.com/t/c/font_4917597_le90lczklu.css";
 
 /* 书写多页面公共样式代码 */
 
@@ -42,13 +42,17 @@ body {
 
 /* 其他页面也可能会有评分 */
 
-.star_bg {
+.star-bg {
   display: inline-block;
   width: 55px;
   height: 11px;
   /* background: url("../img/star@2x.png") no-repeat 0 0/55px 121px; */
 
   background: url("../img/star@2x.png") no-repeat left top/100%;
+}
+
+.star50 {
+  background-position: 0 0;
 }
 
 .star45 {
@@ -89,6 +93,12 @@ body {
 
 .star00 {
   background-position: 0 -110px;
+}
+
+.rate {
+  color: #e09015;
+  font-size: 12px;
+  margin-left: 7px;
 }
 
 /* 菜单广告 */
