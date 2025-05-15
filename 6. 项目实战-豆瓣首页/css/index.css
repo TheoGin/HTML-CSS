@@ -578,8 +578,10 @@ ul {
 
 .aside-right .order-moive-list {
   list-style-type: decimal;
+  /* 有序列表在内部 */
+  list-style-position: inside;
   font-size: 12px;
-  margin-left: 15px;
+  /* margin-left: 15px; */
 }
 
 .aside-right .order-moive-list li {
