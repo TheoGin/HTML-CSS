@@ -159,14 +159,12 @@ ul {
   background: url("../img/new_menu.gif") no-repeat;
 }
 
-.right-menu-list {
+/* .right-menu-list {
   word-break: keep-all;
-}
+} */
 
 .right-menu-list li {
   float: left;
-  width: 48px;
-  height: 24px;
   font-size: 12px;
   word-break: keep-all;
 }
@@ -570,6 +568,13 @@ ul {
 /* 视频区域结束 */
 
 /* 电影区域开始 */
+
+.moive-area .right-menu-list li{
+  width: 48px;
+  height: 24px;
+  /* 设置高度，溢出隐藏 */
+  overflow: hidden;
+}
 
 .aside-right .order-moive-list {
   list-style-type: decimal;
