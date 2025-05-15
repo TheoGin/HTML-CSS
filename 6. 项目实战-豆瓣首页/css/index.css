@@ -694,7 +694,10 @@ ul {
 }
 
 .group-area .item-list li .words {
-  width: 185px;
+  /* width: 185px;
+  float: right; */
+  /* 解决文字环绕，用bfc（会避开浮动元素） 或 浮动（需要定宽） */
+  overflow: hidden;
 }
 
 .group-area .item-list li .words a {
@@ -705,6 +708,7 @@ ul {
 .group-area .item-list li .words span {
   font-size: 12px;
   color: #999;
+  margin-top: 5px;
 }
 
 /* 小组区域结束 */
