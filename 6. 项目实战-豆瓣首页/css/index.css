@@ -606,11 +606,15 @@ ul {
   margin-bottom: 4px;
 }
 
-.moive-main li .star .allstar {
+.moive-main li .star .star_bg {
   display: inline-block;
   width: 55px;
   height: 11px;
-  background: url("../img/star@2x.png") no-repeat 0 -11px/55px 121px;
+  background: url("../img/star@2x.png") no-repeat 0 0/55px 121px;
+}
+
+.moive-main li .star .star_bg.star45 {
+  background-position: 0 -11px;
 }
 
 .moive-main li .star span {
