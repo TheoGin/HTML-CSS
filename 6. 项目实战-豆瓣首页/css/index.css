@@ -659,7 +659,8 @@ ul {
   color: #007982;
 }
 
-.group-area a:hover {
+.group-area a:hover,
+.group-area a:active {
   color: #fff;
 }
 
