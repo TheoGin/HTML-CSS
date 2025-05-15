@@ -778,3 +778,23 @@ ul {
   background-color: #878882;
 }
 /* 读书区域结束 */
+
+/* 音乐区域开始 */
+
+.music-area .aside-left .title a {
+  color: #f38c00;
+}
+
+.music-area .aside-left .title a:hover {
+  color: #fff;
+}
+
+.music-area a {
+  color: #555d53;
+}
+
+.music-area a:hover {
+  color: #fff;
+}
+
+/* 音乐区域结束 */
