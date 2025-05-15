@@ -663,20 +663,30 @@ ul {
 .group-area a:active {
   color: #fff;
 }
-
 .group-area .right-menu-list li {
   margin-right: 10px;
+}
+
+.group-area .item-list {
+  text-align: justify;
+}
+
+.group-area .item-list::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
 }
 
 .group-area .item-list li {
   width: 248px;
   margin-bottom: 30px;
-  margin-right: 30px;
+  /* margin-right: 30px; */
+  /* 行块盒可以用分散对齐 */
 }
 
-.group-area .item-list li:nth-child(2n) {
+/* .group-area .item-list li:nth-child(2n) {
   margin-right: 0;
-}
+} */
 
 .group-area .item-list li .img {
   width: 48px;
