@@ -729,6 +729,11 @@ ul {
   padding: 10px 0;
 }
 
+/* 最后一个没有边框 */
+.read-area .group:last-child {
+  border-bottom: none;
+}
+
 .read-area .group li {
   margin-right: 10px;
 }
