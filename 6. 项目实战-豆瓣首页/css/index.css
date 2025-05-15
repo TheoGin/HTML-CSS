@@ -11,7 +11,7 @@ button {
   cursor: pointer;
 }
 
-.btn-link {
+.block-link {
   display: inline-block;
   color: #fff;
   padding: 2px 10px;
@@ -643,11 +643,11 @@ ul {
   margin-left: 7px;
 }
 
-.moive-main li .btn-link {
+.moive-main li .block-link {
   background-color: #1c8bd0;
 }
 
-.moive-main li .btn-link:hover {
+.moive-main li .block-link:hover {
   background-color: #047fcb;
 }
 
@@ -712,3 +712,64 @@ ul {
 }
 
 /* 小组区域结束 */
+
+/* 读书区域开始 */
+
+.read-area a {
+  color: #494949;
+}
+
+.read-area a:hover,
+.read-area a:active {
+  color: #fff;
+}
+
+.read-area .group {
+  border-bottom: 1px solid #eaeaea;
+  padding: 10px 0;
+}
+
+.read-area .group li {
+  margin-right: 10px;
+}
+
+.read-area .group li:first-child {
+  color: #999 ;
+}
+
+.read-area .item-list li .img {
+  width: 100px;
+}
+
+.read-area .item-list li {
+  text-align: center;
+  margin-right: 38px;
+}
+
+.read-area .item-list li:nth-child(4n) {
+  margin-right: 0;
+}
+
+.read-area .item-list li .words{
+  margin-top: 15px;
+}
+
+.read-area .item-list li .words a {
+  font-size: 13px;
+}
+
+.read-area .item-list li .words span {
+  font-size: 12px;
+  display: block;
+  margin-top: 8px;
+}
+
+.read-area .item-list li .func .block-link {
+  background-color: #999a95;
+  color: #fff;
+}
+
+.read-area .item-list li .func .block-link:hover {
+  background-color: #878882;
+}
+/* 读书区域结束 */
