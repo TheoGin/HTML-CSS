@@ -604,8 +604,19 @@ ul {
   margin-right: 0;
 }
 
-.moive-main li .words {
+/* .moive-main li .words {
   font-size: 13px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 4px;
+} */
+
+.moive-main li .words a {
+  font-size: 13px;
+  display: inline-block;
+  max-width: 100%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
