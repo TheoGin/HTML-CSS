@@ -167,6 +167,7 @@ ul {
   float: left;
   font-size: 12px;
   /* word-break: keep-all; */
+  margin-right: 10px;
 }
 
 .group .group-name a {
@@ -660,9 +661,6 @@ ul {
 .group-area a:active {
   color: #fff;
 }
-.group-area .right-menu-list li {
-  margin-right: 10px;
-}
 
 .group-area .item-list {
   text-align: justify;
@@ -932,10 +930,6 @@ ul {
 .city-area a:hover,
 .city-area a:active {
   color: #fff;
-}
-
-.city-area .aside-right .right-menu-list li {
-  margin-right: 10px;
 }
 
 .city-area .item-list li {
