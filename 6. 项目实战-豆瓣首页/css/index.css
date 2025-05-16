@@ -813,7 +813,7 @@ ul {
 }
 
 .music-area .music-list li .icon-bofang1::before {
-  background-color: #1d2123;
+  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   /* height: 100%; */
   line-height: 48px;
@@ -831,7 +831,7 @@ ul {
   margin-left: 10px;
   /* overflow: hidden; */
   font-size: 12px;
-  line-height: 1.5; 
+  line-height: 1.5;
 }
 
 .music-area .music-list li .words span {
@@ -860,11 +860,10 @@ ul {
 }
 
 .music-area .hot-music-list li .icon-bofang::before {
-  
   width: 40px;
   height: 40px;
   line-height: 40px;
-  background-color: rgba(0,0,0,.4);
+  background-color: rgba(0, 0, 0, 0.4);
   font-size: 33px;
   border-radius: 50%;
   /* margin: 20px; */
