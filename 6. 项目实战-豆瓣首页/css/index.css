@@ -182,6 +182,14 @@ ul {
   content: "»";
 }
 
+.iconfont::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  text-align: center;
+}
+
 /* 首页通用样式结束 */
 
 /* 头部区域开始 */
@@ -562,14 +570,10 @@ ul {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #fff;
   font-size: 35px;
 
   /* 居中 */
-  text-align: center;
+  /* text-align: center; */
   line-height: 145px;
 }
 
@@ -808,14 +812,9 @@ ul {
 }
 
 .music-area .music-list li .icon-bofang1::before {
-  position: absolute;
-  top: 0;
-  left: 0;
   background-color: #1d2123;
-  color: #fff;
   width: 100%;
   /* height: 100%; */
-  text-align: center;
   line-height: 48px;
   font-size: 16px;
   display: none;
@@ -859,11 +858,6 @@ ul {
 }
 
 .music-area .hot-music-list li .icon-bofang::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #fff;
-  text-align: center;
   
   width: 40px;
   height: 40px;
