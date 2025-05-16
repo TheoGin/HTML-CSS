@@ -901,6 +901,8 @@ ul {
   width: 240px;
   margin-right: 20px;
   margin-bottom: 30px;
+  /* 字体大小默认16px，可以手动设置 */
+  font-size: 16px;
 }
 
 .product-area .item-list li .words {
