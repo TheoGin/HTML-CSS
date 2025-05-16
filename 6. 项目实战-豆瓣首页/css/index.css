@@ -914,3 +914,51 @@ ul {
 }
 
 /* 豆品区域结束 */
+
+/* 同城区域开始 */
+.city-area .aside-left .title a {
+  color: #ec5303;
+}
+
+.city-area .aside-left .title a:hover,
+.city-area .aside-left .title a:active {
+  color: #fff;
+}
+
+.city-area a {
+  color: #643;
+}
+
+.city-area a:hover,
+.city-area a:active {
+  color: #fff;
+}
+
+.city-area .aside-right .right-menu-list li {
+  margin-right: 10px;
+}
+
+.city-area .item-list li {
+  margin-right: 20px;
+  margin-bottom: 60px;
+}
+
+.city-area .item-list li .img {
+  width: 70px;
+  margin-right: 10px;
+}
+
+.city-area .item-list li .words {
+  overflow: hidden;
+}
+
+.city-area .item-list li .words a {
+  font-size: 13px;
+}
+
+.city-area .item-list li .words span  {
+  font-size: 12px;
+  display: block;
+}
+
+/* 同城区域结束 */
