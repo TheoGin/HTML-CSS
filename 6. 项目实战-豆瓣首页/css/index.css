@@ -935,6 +935,11 @@ ul {
 .city-area .item-list li {
   margin-right: 20px;
   margin-bottom: 60px;
+  width: 248px;
+}
+
+.city-area .item-list li:nth-child(2n) {
+  margin-right: 0;
 }
 
 .city-area .item-list li .img {
@@ -953,6 +958,8 @@ ul {
 .city-area .item-list li .words span  {
   font-size: 12px;
   display: block;
+  color: #666;
+  line-height: 1.7;
 }
 
 /* 同城区域结束 */
