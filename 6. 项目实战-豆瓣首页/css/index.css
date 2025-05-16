@@ -881,3 +881,34 @@ ul {
 }
 
 /* 音乐区域结束 */
+
+/* 豆品区域开始 */
+
+.product-area .aside-left .title a {
+  color: #1f9432;
+}
+
+.product-area .aside-left .title a:hover,
+.product-area .aside-left .title a:active {
+  color: #fff;
+}
+
+.product-area .aside-right .words {
+  font-size: 14px;
+}
+
+.product-area .item-list li {
+  width: 240px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.product-area .item-list li .words {
+  margin-top: 10px;
+}
+
+.product-area .item-list li .words .price {
+  color: #E55457;
+}
+
+/* 豆品区域结束 */
