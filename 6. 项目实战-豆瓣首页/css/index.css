@@ -983,7 +983,9 @@ ul {
 
 .footer .container .f-left .words img {
   width: 15px;
-  vertical-align: bottom;
+  /* vertical-align: bottom; */
+  /* middle: 该元素的中线（content-area的一半），与父元素的X字母高度一半的位置对齐 */
+  vertical-align: middle;
 }
 
 .footer .container .f-right .menu {
@@ -991,7 +993,11 @@ ul {
 }
 
 .footer .container .f-right .menu a {
-  margin-right: 2px;
+  margin: 0 2px;
+}
+
+.footer .container .f-right .menu a:first-child {
+  margin-left: 0;
 }
 
 /* .footer .container .f-right .menu a:not(:last-child)::after {
