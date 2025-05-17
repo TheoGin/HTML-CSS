@@ -198,8 +198,6 @@ ul {
   height: 90px;
   padding-top: 30px;
   /* .header 没设置上外边距，默认为0（0px和30px取最大值就是30px） */
-
-  box-sizing: border-box;
 }
 
 .header .container {
@@ -908,7 +906,7 @@ ul {
 }
 
 .product-area .item-list li .words .price {
-  color: #E55457;
+  color: #e55457;
 }
 
 /* 豆品区域结束 */
@@ -955,7 +953,7 @@ ul {
   font-size: 13px;
 }
 
-.city-area .item-list li .words span  {
+.city-area .item-list li .words span {
   font-size: 12px;
   display: block;
   color: #666;
@@ -963,3 +961,46 @@ ul {
 }
 
 /* 同城区域结束 */
+
+/* 页脚区域开始 */
+
+.footer .container {
+  padding-top: 15px;
+  padding-bottom: 30px;
+  border-top: 1px dashed #dcdcdc;
+}
+
+.footer .container .f-left,
+.footer .container .f-right {
+  width: 50%;
+}
+
+.footer .container .f-left .words {
+  font-size: 12px;
+  color: #999;
+  line-height: 1.5;
+}
+
+.footer .container .f-left .words img {
+  width: 15px;
+  vertical-align: bottom;
+}
+
+.footer .container .f-right .menu {
+  font-size: 12px;
+}
+
+.footer .container .f-right .menu a {
+  margin-right: 2px;
+}
+
+/* .footer .container .f-right .menu a:not(:last-child)::after {
+  content: " · ";
+} */
+
+.footer .container .f-right .adv-img {
+  width: 150px;
+  margin-top: 20px;
+}
+
+/* 页脚区域结束 */
